@@ -5,7 +5,8 @@ import DropdownMenu from '../dropdown/DropdownMenu';
 import DarkLogo from "../../assets/Logo/DarkLogo.png";
 import LightLogo from "../../assets/Logo/LightLogo.png";
 import { NotificationOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./nav.css"
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -23,52 +24,65 @@ const Navbar = () => {
             <img
               src={theme === "dark" ? DarkLogo : LightLogo} // Switch logos based on theme
               alt={theme === "dark" ? "DarkLogo" : "LightLogo"}
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </div>
         </div>
       </div>
       <div className="flex items-center ">
         <div className="flex space-x-9">
-        <Link
+        <NavLink
             to="/"
-            className="text-black dark:text-white font-medium text-lg hover:text-indigo-600 dark:hover:text-indigo-400"
+            end
+            className={({ isActive }) =>
+              isActive
+                ? 'relative text-lg font-medium text-gray-900 dark:text-white marker-underline active'
+                : 'relative text-lg font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-600 dark:hover:text-indigo-400'
+            }
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
-            className="text-gray-500 dark:text-gray-300 text-lg hover:text-indigo-600 dark:hover:text-indigo-400"
+            className={({ isActive }) =>
+              isActive
+                ? 'relative text-lg font-medium text-gray-900 dark:text-white marker-underline active'
+                : 'relative text-lg font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400'
+            }
           >
             About Us
-          </Link>
-          {/* Dropdown Link */}
+          </NavLink>
           <div
-            className="relative text-gray-500 dark:text-gray-300 text-lg hover:text-indigo-600 dark:hover:text-indigo-400"
+            className="relative text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <span style={{cursor:"pointer"}}>Solutions</span>
             {dropdownOpen && <DropdownMenu />}
           </div>
-          <Link
+          <NavLink
             to="/services"
-            className="text-gray-500 dark:text-gray-300 text-lg hover:text-indigo-600 dark:hover:text-indigo-400"
+            className={({ isActive }) =>
+              isActive
+                ? 'relative text-lg font-medium text-gray-900 dark:text-white marker-underline active'
+                : 'relative text-lg font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400'
+            }
           >
             Services
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact-us"
-            className="text-gray-500 dark:text-gray-300 text-lg hover:text-indigo-600 dark:hover:text-indigo-400"
+            className={({ isActive }) =>
+              isActive
+                ? 'relative text-lg font-medium text-gray-900 dark:text-white marker-underline active'
+                : 'relative text-lg font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400'
+            }
           >
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
       <div className="flex items-center space-x-4">
-        <button className="relative p-2 rounded-md bg-transparent text-black dark:text-white">
-          <NotificationOutlined style={{ fontSize: "24px" }} />
-        </button>
         <ThemeToggle onThemeChange={handleThemeChange} />
         <img
           src="https://via.placeholder.com/150"

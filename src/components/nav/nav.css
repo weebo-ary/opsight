@@ -1,0 +1,18 @@
+.marker-underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: gray;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+}
+
+.marker-underline:hover::before,
+.marker-underline.active::before {
+    transform: scaleX(1);
+}
