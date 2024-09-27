@@ -4,7 +4,7 @@ import Navbar from "./components/nav/nav"
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-white dark:bg-gray-800 text-black dark:text-white min-h-screen transition duration-500">
       <Navbar />
       <Outlet /> 
     </div>
