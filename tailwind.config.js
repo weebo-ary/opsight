@@ -6,6 +6,7 @@ module.exports = {
     extend: {
         width: {
           '100': '100%',
+          '120': '28rem',
           '128': '32rem',
           '144': '36rem', 
           '150': '38rem', 
@@ -17,10 +18,11 @@ module.exports = {
         },
         height: {
           '100': '85vh',
+          '110': '92vh'
         },
         screens: {
           'xs': '120px', 
-          // 'sm': '480px', 
+          'sm': '480px', 
           'md': '800px', 
           'lg': '1024px', 
           'xl': '1280px', 
