@@ -5,6 +5,8 @@ import {
   KeyOutlined,
   ProjectOutlined,
   SnippetsOutlined,
+  StarFilled,
+  StarOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
@@ -24,31 +26,31 @@ const DropdownMenu = () => {
           to="/library"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <BookOutlined className="text-xs mr-3" /> Library
+          <BookOutlined className="text-xs mr-3" /> Feature 1
         </Link>
         <Link
           to="/documentation"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <SnippetsOutlined className="text-xs mr-3" /> Documentation
+          <SnippetsOutlined className="text-xs mr-3" /> Feature 2
         </Link>
         <Link
           to="/academy"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <ExpandAltOutlined className="text-xs mr-3" /> Expansion
+          <ExpandAltOutlined className="text-xs mr-3" /> Feature 3
         </Link>
         <Link
           to="/portal"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <ProjectOutlined className="text-xs mr-3" /> Central Portal
+          <ProjectOutlined className="text-xs mr-3" /> Feature 4
         </Link>
         <Link
           to="/youtube-channel"
           className="flex md:w-36 items-center text-sm xs:w-48 px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <YoutubeOutlined className="text-xs mr-3" /> Media Gallery
+          <YoutubeOutlined className="text-xs mr-3" /> Feature 5
         </Link>
         <br/>
       </div>
@@ -59,6 +61,9 @@ const DropdownMenu = () => {
         </h3>
         <p className="text-gray-400 text-xs dark:text-gray-300 mb-4">
           Explore how Opsight AI is utilized by our customers.
+        </p>
+        <p className="text-gray-400 text-xs dark:text-gray-300 mb-4">
+          Customer Ratings : <StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarOutlined />
         </p>
         <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-0 xs:hidden md:flex">
           <KeyOutlined style={{marginRight:"4px", fontSize:"16px"}}/> Key Features
@@ -87,31 +92,31 @@ const DropdownMenu = () => {
                 to="/library"
                 className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
               >
-                <BookOutlined className="text-xs mr-3" /> Library
+                <BookOutlined className="text-xs mr-3" /> Feature 1
               </Link>
               <Link
                 to="/documentation"
                 className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
               >
-                <SnippetsOutlined className="text-xs mr-3" /> Documentation
+                <SnippetsOutlined className="text-xs mr-3" /> Feature 2
               </Link>
               <Link
                 to="/academy"
                 className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
               >
-                <ExpandAltOutlined className="text-xs mr-3" /> Expansion
+                <ExpandAltOutlined className="text-xs mr-3" /> Feature 3
               </Link>
               <Link
                 to="/portal"
                 className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
               >
-                <ProjectOutlined className="text-xs mr-3" /> Central Portal
+                <ProjectOutlined className="text-xs mr-3" /> Feature 4
               </Link>
               <Link
                 to="/youtube-channel"
                 className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
               >
-                <YoutubeOutlined className="text-xs mr-3" /> Media Gallery
+                <YoutubeOutlined className="text-xs mr-3" /> Feature 5
               </Link>
             </div>
           </div>
@@ -121,31 +126,31 @@ const DropdownMenu = () => {
               to="/library"
               className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             >
-              <BookOutlined className="text-xs mr-3" /> Library
+              <BookOutlined className="text-xs mr-3" /> Feature 6
             </Link>
             <Link
               to="/documentation"
               className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             >
-              <SnippetsOutlined className="text-xs mr-3" /> Documentation
+              <SnippetsOutlined className="text-xs mr-3" /> Feature 7
             </Link>
             <Link
               to="/academy"
               className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             >
-              <ExpandAltOutlined className="text-xs mr-3" /> Expansion
+              <ExpandAltOutlined className="text-xs mr-3" /> Feature 8
             </Link>
             <Link
               to="/portal"
               className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             >
-              <ProjectOutlined className="text-xs mr-3" /> Central Portal
+              <ProjectOutlined className="text-xs mr-3" /> Feature 9
             </Link>
             <Link
               to="/youtube-channel"
               className="flex text-sm items-center px-1 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
             >
-              <YoutubeOutlined className="text-xs mr-3" /> Media Gallery
+              <YoutubeOutlined className="text-xs mr-3" /> Feature 10
             </Link>
           </div>
         </div>
