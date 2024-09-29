@@ -4,7 +4,7 @@ import ThemeToggle from "../ThemeToggle";
 import DropdownMenu from "../dropdown/DropdownMenu";
 import DarkLogo from "../../assets/Logo/DarkLogo.png";
 import LightLogo from "../../assets/Logo/LightLogo.png";
-import { MenuOutlined, NotificationOutlined } from "@ant-design/icons";
+import { MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 import Sidebar from "../Drawer/Sidebar";

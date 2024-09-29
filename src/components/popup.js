@@ -1,7 +1,6 @@
 // src/components/Popup.js
 import React from 'react';
 import {
-    ArrowRightOutlined,
     BookOutlined,
     ExpandAltOutlined,
     KeyOutlined,
