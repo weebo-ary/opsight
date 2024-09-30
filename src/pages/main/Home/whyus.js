@@ -38,7 +38,7 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <div className="py-16 lg:h-90 xs:h-160 xs:py-5 md:px-12 xl:mb-0 md:mb-0 bg-white dark:bg-gray-800 relative overflow-hidden">
+    <div className="py-16 lg:h-100 xs:h-160 xs:py-5 md:px-12 xl:mb-0 md:mb-0 bg-white dark:bg-gray-800 relative overflow-hidden">
       <div className="mx-auto px-4 relative z-10">
         <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
         <span className="relative inline-block">
