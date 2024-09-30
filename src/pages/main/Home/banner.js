@@ -9,10 +9,10 @@ const Banner = () => {
       <div className="absolute inset-y-0 left-0 w-full max-w-screen-xl -translate-x-1/4 -rotate-6 transform opacity-20 z-0 "></div>
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-24 xl:px-36 flex flex-col-reverse md:flex-row xs:flex-col items-center justify-between">
         <div className="md:w-200 xs:w-120 text-center md:text-left">
-          <h1 className="text-4xl text-gray-700 dark:text-white mb-6">
+          <h1 className="text-4xl text-gray-700 dark:text-white mb-6 ">
             OPSIGHT AI
           </h1>
-          <h1 className="relative text-4xl font-extrabold text-gray-900 dark:text-white mb-6 inline-block">
+          <h1 className="relative text-4xl font-extrabold text-gray-900 sm:px-10 xs:px-10 dark:text-white mb-6 inline-block">
             Transforming Operations Data Into Actionable{" "}
             <span className="relative inline-block">
               Insights!
