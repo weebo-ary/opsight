@@ -1,7 +1,7 @@
-// src/Navbar.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeToggle from "../ThemeToggle";
 import DropdownMenu from "../dropdown/DropdownMenu";
+import DropdownMenuProducts from "../dropdown/DropDownProducts";
 import DarkLogo from "../../assets/Logo/DarkLogo.png";
 import LightLogo from "../../assets/Logo/LightLogo.png";
 import { MenuOutlined } from "@ant-design/icons";
@@ -16,14 +16,19 @@ import {
   HomeOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
+import DropdownMenuServices from "../dropdown/DropDownService";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
   };
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpenProduct, setDropdownProduct] = useState(false);
+  const [dropdownOpenServices, setDropdownServices] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // Toggle Sidebar
@@ -31,8 +36,29 @@ const Navbar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-white dark:bg-gray-800 p-4 flex justify-between items-center transition duration-500">
+    <nav
+      className={`sticky top-0 z-50 p-4 flex justify-between items-center transition duration-500 ${
+        isScrolled
+          ? "bg-gray-100 dark:bg-gray-700 shadow-md"
+          : "bg-white dark:bg-gray-800"
+      }`}
+    >
       <div className="flex items-center">
         <div className="mr-6">
           <div className="mr-6">
@@ -71,22 +97,29 @@ const Navbar = () => {
           </NavLink>
           <div
             className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            onMouseEnter={() => setDropdownProduct(true)}
+            onMouseLeave={() => setDropdownProduct(false)}
+          >
+            <DotChartOutlined /> <span style={{ cursor: "pointer" }}>Products</span>
+            {dropdownOpenProduct && <DropdownMenuProducts />}
+          </div>
+          
+          <div
+            className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <DotChartOutlined /> <span style={{ cursor: "pointer" }}>Solutions</span>
             {dropdownOpen && <DropdownMenu />}
           </div>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive
-                ? "relative text-sm font-medium p-1 text-gray-900 dark:text-white marker-underline active"
-                : "relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
-            }
+          <div
+            className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            onMouseEnter={() => setDropdownServices(true)}
+            onMouseLeave={() => setDropdownServices(false)}
           >
-           <ControlOutlined /> Services
-          </NavLink>
+            <ControlOutlined /> <span style={{ cursor: "pointer" }}>Services</span>
+            {dropdownOpenServices && <DropdownMenuServices />}
+          </div>
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>

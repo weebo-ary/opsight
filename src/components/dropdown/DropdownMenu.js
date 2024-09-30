@@ -20,37 +20,31 @@ const DropdownMenu = () => {
     setIsPopupOpen(!isPopupOpen);
   };
   return (
-    <div className="md:absolute xs:relative md:border-t-0 xs:border-t top-full md:w-150 xs:w-72 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-4 z-10 md:flex">
-      <div className="md:w-1/3 xs:w-1/2 md:border-r border-gray-100 dark:border-gray-700 pr-4">
+    <div className="md:absolute xs:relative md:border-t-0 xs:border-t top-full md:w-128 xs:w-72 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-4 z-10 md:flex">
+      <div className="md:w-1/2 xs:w-1/2 md:border-r border-gray-100 dark:border-gray-700 pr-4">
         <Link
           to="/library"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <BookOutlined className="text-xs mr-3" /> Feature 1
+          <BookOutlined className="text-xs mr-3" /> CNC Monitoring
         </Link>
         <Link
           to="/documentation"
-          className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
+          className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <SnippetsOutlined className="text-xs mr-3" /> Feature 2
+          <SnippetsOutlined className="text-xs mr-3" /> Robot Monitoring
         </Link>
         <Link
           to="/academy"
-          className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
+          className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <ExpandAltOutlined className="text-xs mr-3" /> Feature 3
+          <ExpandAltOutlined className="text-xs mr-3" /> Assembly Line Monitoring
         </Link>
         <Link
           to="/portal"
-          className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
+          className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <ProjectOutlined className="text-xs mr-3" /> Feature 4
-        </Link>
-        <Link
-          to="/youtube-channel"
-          className="flex md:w-36 items-center text-sm xs:w-48 px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
-        >
-          <YoutubeOutlined className="text-xs mr-3" /> Feature 5
+          <ProjectOutlined className="text-xs mr-3" /> Edge Monitoring
         </Link>
         <br/>
       </div>
@@ -157,7 +151,7 @@ const DropdownMenu = () => {
         <br />
         <div className="border-b xs:hidden"></div>
 
-        <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg md:flex xs:hidden items-center">
+        {/* <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg md:flex xs:hidden items-center">
           <img
             src="https://via.placeholder.com/80"
             alt="Example"
@@ -175,7 +169,7 @@ const DropdownMenu = () => {
               meet the demands of modern business?
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
