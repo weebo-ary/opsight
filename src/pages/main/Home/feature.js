@@ -53,7 +53,7 @@ const FeatureSection = () => {
   };
 
   return (
-    <div className="py-16 xs:py-5 bg-white dark:bg-transparent">
+    <div className="overflow-hidden py-16 xs:py-5 bg-white dark:bg-transparent">
       <div className="mx-auto px-4">
         <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
           Our<span className="relative inline-block ml-2">Solutions
