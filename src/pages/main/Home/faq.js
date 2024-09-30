@@ -171,7 +171,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 py-16">
+    <div className="bg-white dark:bg-gray-800 py-16 md:py-16 xs:py-0">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
           Frequently Asked Questions
@@ -198,7 +198,7 @@ const FAQ = () => {
               </button>
               <div
                 className={`overflow-hidden transition-max-height duration-500 ease-in-out mb-5 ${
-                  activeIndex === index ? "max-h-96" : "max-h-0"
+                  activeIndex === index ? "max-h-96 md:max-h-96 xs:max-h-[800px]" : "max-h-0"
                 }`}
               >
                 <div className="py-2 px-4 text-gray-600 dark:text-gray-400">

@@ -11,7 +11,7 @@ const TrustUs = () => {
       <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white mb-8">
         Trusted By Leading Companies
       </h2>
-      <div className="flex justify-center items-center space-x-8 h-48 w-full">
+      <div className="flex md:flex-row xs:flex-col justify-center items-center space-x-8 h-48 md:h-48 xs:h-100 w-full">
           <img
             src={Aic}
             alt="Aic"

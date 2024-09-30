@@ -114,7 +114,7 @@ const OfferingSection = () => {
   };
 
   return (
-    <div className="py-16 h-100 xs:py-5 bg-white dark:bg-gray-800 relative overflow-hidden mb-2">
+    <div className="py-16 h-100 md:h-100 xs:h-100 xs:py-0 bg-white dark:bg-gray-800 relative overflow-hidden mb-2">
       <div className="mx-auto px-4 relative z-10">
         <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-8">
           Work Smarter with a Smart Platform
@@ -128,7 +128,7 @@ const OfferingSection = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`bg-red-100 px-4 py-2 rounded-lg ml-10 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+                className={`bg-red-100 px-4 py-2 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-full opacity-0"
                     : "translate-x-0 opacity-100"
@@ -139,10 +139,10 @@ const OfferingSection = () => {
                     {blobsData[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-4xl text-end font-bold text-gray-800">
+                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-end font-bold text-gray-800">
                       {blobsData[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl text-end text-gray-600">
+                    <p className="mt-2 text-xl  md:text-xl xs:text-lg text-end text-gray-600">
                       {blobsData[currentIndex].description}
                     </p>
                   </div>
@@ -152,7 +152,7 @@ const OfferingSection = () => {
               <div className="border-b mt-14"></div>
 
               <div
-                className={`bg-green-100 px-4 py-2 rounded-lg mr-10 relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
+                className={`bg-green-100 px-4 py-2 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-[-100%] opacity-0"
                     : "translate-x-0 opacity-100"
@@ -163,10 +163,10 @@ const OfferingSection = () => {
                     {blobsDataTwo[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-3xl text-start font-bold text-gray-800">
+                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-start font-bold text-gray-800">
                       {blobsDataTwo[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl text-start text-gray-600">
+                    <p className="mt-2 text-xl md:text-xl xs:text-lg text-start text-gray-600">
                       {blobsDataTwo[currentIndex].description}
                     </p>
                   </div>

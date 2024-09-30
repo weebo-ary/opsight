@@ -18,7 +18,8 @@ module.exports = {
         },
         height: {
           '100': '85vh',
-          '110': '92vh'
+          '110': '92vh',
+          '150': '135vh'
         },
         screens: {
           'xs': '120px', 

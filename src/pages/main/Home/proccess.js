@@ -106,10 +106,10 @@ const ProcessSection = () => {
   };
   return (
     <div className="py-16 xs:py-5 bg-white dark:bg-transparent mt-10 mb-10">
-      <div className="mx-auto px-4 flex gap-10 md:px-14">
-        <div className="flex flex-col items-center justify-center">
+      <div className="mx-auto px-4 flex md:flex-row xs:flex-col gap-10 md:px-14">
+        <div className="flex flex-col md:flex-col items-center justify-center">
           <div>
-            <h2 className="text-start text-4xl font-extrabold text-gray-900 dark:text-white mb-4 capitalize">
+            <h2 className="text-start md:text-start xs:text-center text-4xl md:text-4xl xs:text-2xl font-extrabold text-gray-900 dark:text-white mb-4 capitalize">
               Digitize Your{" "}
               <span className="relative inline-block ml-2">
                 Processes
@@ -126,11 +126,11 @@ const ProcessSection = () => {
           </div>
           <br />
           <div className="xs:w-full flex flex-col items-start justify-start">
-            <p className="md:w-full xs:w-full text-start text-xl text-gray-600 dark:text-gray-400 mb-12">
+            <p className="md:w-full xs:w-full text-start md:text-start xs:text-center text-xl text-gray-600 dark:text-gray-400 mb-12">
               Take a look at all the key <b>Processes</b> we cover. No Need To
               Design Or Develop Custom Software For Your Operations.
             </p>
-            <div className="flex items-start justify-start">
+            <div className="flex items-start md:items-start xs:items-center justify-start md:justify-start xs:justify-center w-full">
               <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
                 Learn more <ArrowRightOutlined className="ml-2" />
               </button>
