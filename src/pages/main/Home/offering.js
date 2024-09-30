@@ -82,42 +82,35 @@ const OfferingSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    const handleNext = () => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % blobsData.length); // Loop through the items
+        setIsTransitioning(false);
+      }, 500);
+    };
+
     if (!isPaused) {
       const interval = setInterval(() => {
         handleNext();
       }, 2000);
 
-      const progressInterval = setInterval(() => {
-        setProgress((prev) => (prev < 100 ? prev + 1 : 0));
-      }, 25);
-
       return () => {
         clearInterval(interval);
-        clearInterval(progressInterval);
       };
     }
-  }, [currentIndex, isPaused]);
-  const handleNext = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % blobsData.length); // Loop through the items
-      setIsTransitioning(false);
-      setProgress(0);
-    }, 500);
-  };
+  }, [currentIndex, isPaused, blobsData.length]);
+ 
 
   // Handlers for mouse enter and leave
   const handleMouseEnter = () => {
     setIsPaused(true);
-    setProgress(0);
   };
 
   const handleMouseLeave = () => {
     setIsPaused(false);
-    setProgress(0);
   };
 
   return (

@@ -69,6 +69,15 @@ const ProcessSection = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    const handleNext = () => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length); // Loop through the items
+        setIsTransitioning(false);
+        setProgress(0);
+      }, 500);
+    };
+
     if (!isPaused) {
       const interval = setInterval(() => {
         handleNext();
@@ -83,15 +92,7 @@ const ProcessSection = () => {
         clearInterval(progressInterval);
       };
     }
-  }, [currentIndex, isPaused]);
-  const handleNext = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length); // Loop through the items
-      setIsTransitioning(false);
-      setProgress(0);
-    }, 500);
-  };
+  }, [currentIndex, isPaused, carouselItems.length]);
 
   // Handlers for mouse enter and leave
   const handleMouseEnter = () => {
