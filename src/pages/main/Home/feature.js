@@ -72,7 +72,7 @@ const FeatureSection = () => {
             <img
               src={FeatureImage}
               alt="Placeholder"
-              className="w-128 h-auto rounded-lg"
+              className="w-128 md:w-128 xs:w-96 h-auto rounded-lg"
             />
           </div>
           <div className="md:w-1/2 space-y-4 mt-10">
