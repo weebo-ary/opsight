@@ -172,10 +172,11 @@ const FAQ = () => {
 
   return (
     <div className="overflow-hidden bg-white dark:bg-gray-800 py-16 md:py-16 xs:py-0">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Frequently Asked Questions
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+        Frequently Asked Questions
         </h2>
+        
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div

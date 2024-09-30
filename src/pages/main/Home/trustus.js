@@ -7,10 +7,10 @@ import StartupIndia from "../../../assets/Logo/startup_india.png"
 
 const TrustUs = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 py-10 flex flex-col items-center justify-center">
-      <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white mb-8">
-        Trusted By Leading Companies
-      </h2>
+    <div className="bg-white dark:bg-gray-800 py-10 flex flex-col items-center justify-center mt-20 mb-20 bg-red-300">
+      <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+      Trusted By Leading Companies
+        </h2>
       <div className="flex md:flex-row xs:flex-col justify-center items-center space-x-8 h-48 md:h-48 xs:h-150 sm:h-100 w-full">
           <img
             src={Aic}

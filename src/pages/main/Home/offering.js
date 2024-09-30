@@ -114,7 +114,7 @@ const OfferingSection = () => {
   };
 
   return (
-    <div className="py-16 h-100 md:h-100 sm:h-100 xs:h-150 xs:py-0 bg-white dark:bg-gray-800 relative overflow-hidden mb-2">
+    <div className="py-0 h-100 md:h-100 sm:h-100 xs:h-150 xs:py-0 bg-white dark:bg-gray-800 relative overflow-hidden mt-4">
       <div className="mx-auto px-4 relative z-10">
         <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-8">
           Work Smarter with a Smart Platform

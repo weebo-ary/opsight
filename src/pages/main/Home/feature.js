@@ -75,7 +75,7 @@ const FeatureSection = () => {
               className="w-128 md:w-128 xs:w-80 sm:w-80 h-auto rounded-lg"
             />
           </div>
-          <div className="md:w-1/2 space-y-4 mt-10">
+          <div className="md:w-164 space-y-4 mt-10">
             {features.map((feature, index) => (
               <div
                 key={index}
