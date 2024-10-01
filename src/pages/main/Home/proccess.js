@@ -124,7 +124,7 @@ function ProcessSection() {
         </div>
         <div className="">
           <div className="">
-            <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
+            <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
               Learn more <ArrowRightOutlined className="ml-2" />
             </button>
           </div>

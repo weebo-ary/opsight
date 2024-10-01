@@ -37,7 +37,7 @@ function Banner() {
           </p>
         </div>
         <div className="flex space-x-4">
-          <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
+          <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
             Get started
           </button>
           <button className="px-6 py-3 text-slate-600 dark:text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
