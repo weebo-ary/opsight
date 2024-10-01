@@ -26,7 +26,7 @@ module.exports = {
           '160': '200vh'
         },
         screens: {
-          'xs': '370px', 
+          'xs': '240px', 
           'sm': '400px',
           // => @media (min-width: 640px) { Tab }
     
