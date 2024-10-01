@@ -92,7 +92,7 @@ function SolutionSection() {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-3">
                     <div className="text-2xl text-blue-400">{feature.icon}</div>
-                    <h3 className="text-2xl md:text-2xl sm:text-xl xs:text-xl font-semibold text-black dark:text-white">
+                    <h3 className="text-2xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl font-semibold text-black dark:text-white">
                       {feature.title}
                     </h3>
                   </div>

@@ -1,17 +1,23 @@
-
 import IllustrationLight from "../../../assets/Illustration/banner-thumb-bcbc5b3e1123cc303539aba298f1482f.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
-  import React from "react";
+import React from "react";
 
 function Banner() {
   return (
-    <div className="mx-2 md:mx-2 sm:mx-0 h-100 md:h-100 sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center">
-      <div className=" pl-5">
-        <div className="">
-          <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-700 dark:text-white mb-6 ">
+    <div className="relative mx-2 md:mx-2 sm:mx-0 h-100 lg:mb-20 lg:mt-10 lg:h-auto md:h-auto sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center overflow-hidden">
+      {/* Decorative SVGs */}
+      {/* <div className="absolute top-10 right-80 w-96 h-40 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div> */}
+      <div className="absolute bottom-30 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+      {/* <div className="absolute bottom-0 right-0 w-52 h-52 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-6000"></div> */}
+
+
+      <div className="pl-5 relative z-10">
+        <div>
+          <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-700 dark:text-white mb-6">
             OPSIGHT AI
           </h1>
-          <h1 className="relative text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-6 inline-block">Transforming Operations Data Into Actionable{" "}
+          <h1 className="relative text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-6 inline-block">
+            Transforming Operations Data Into Actionable{" "}
             <span className="relative inline-block">
               Insights!
               <svg
@@ -24,24 +30,24 @@ function Banner() {
             </span>
           </h1>
         </div>
-        <div className="">
+        <div>
           <p className="text-4xl md:text-4xl sm:text-xl xs:text-xl text-gray-700 dark:text-gray-400 mb-6">
             Enabling companies to unlock their untapped manufacturing potential
             & achieve operational excellence through AI.
           </p>
         </div>
-        <div className="flex">
+        <div className="flex space-x-4">
           <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
             Get started
           </button>
           <button className="px-6 py-3 text-slate-600 dark:text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
             Learn more <ArrowRightOutlined className="ml-2" />
-          </button>{" "}
+          </button>
         </div>
       </div>
-      <div className="">
+      <div className="relative z-10">
         <img
-          src={IllustrationLight} // Replace with the actual mockup image URL
+          src={IllustrationLight}
           alt="Mockup"
           className="w-200 pr-2"
         />
