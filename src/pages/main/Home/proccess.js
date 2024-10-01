@@ -7,7 +7,7 @@ import {
   ArrowRightOutlined,
 } from "@ant-design/icons";
 
-const ProcessSection = () => {
+function ProcessSection() {
   // Define the array of carousel items
   const carouselItems = [
     {
@@ -104,132 +104,105 @@ const ProcessSection = () => {
     setIsPaused(false);
     setProgress(0);
   };
+
   return (
-    <div className="py-16 xs:py-5 md:px-24 bg-white dark:bg-transparent mt-10 mb-20">
-      <div className="mx-auto px-4 flex md:flex-row xs:flex-col gap-10 md:px-14">
-        <div className="flex flex-col md:flex-col items-center justify-center">
-          <div>
-            <h2 className="text-start md:text-start xs:text-center text-4xl md:text-4xl xs:text-2xl font-extrabold text-gray-900 dark:text-white mb-4 capitalize">
-              Digitize Your <span className="text-red-500">Processes</span> And Gain Analytics From Day One
-            </h2>
-          </div>
-          <br />
-          <div className="xs:w-full flex flex-col items-start justify-start">
-            <p className="md:w-full xs:w-full text-start md:text-start xs:text-center text-xl text-gray-600 dark:text-gray-400 mb-12">
-              Take a look at all the key <b>Processes</b> we cover. No Need To
-              Design Or Develop Custom Software For Your Operations.
-            </p>
-            <div className="flex items-start md:items-start xs:items-center justify-start md:justify-start xs:justify-center w-full">
-              <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
-                Learn more <ArrowRightOutlined className="ml-2" />
-              </button>
-            </div>
+    <div className="mx-8 flex md:flex-row sm:flex-col xs:flex-col mt-20 sm:mt-10 xs:mt-10 mb-20 bg-gray-100 dark:bg-gray-900 p-5 rounded-lg">
+      <div className=" flex flex-col items-start justify-center gap-10">
+        <div className="">
+          <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
+            Digitize Your <span className="text-red-500">Processes</span> And
+            Gain Analytics From Day One
+          </h2>
+        </div>
+        <div className="">
+          {" "}
+          <p className="text-3xl md:text-3xl sm:text-xl xs:text-xl text-gray-600 dark:text-gray-400">
+            Take a look at all the key <b>Processes</b> we cover. No Need To
+            Design Or Develop Custom Software For Your Operations.
+          </p>{" "}
+        </div>
+        <div className="">
+          <div className="">
+            <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
+              Learn more <ArrowRightOutlined className="ml-2" />
+            </button>
           </div>
         </div>
-
-        {/* Carousel Section */}
-        <div className="flex flex-col items-center justify-center">
+      </div>
+      <div className="flex flex-col xs:max-w-full items-center justify-center">
+        <div
+          className="relative w-144 md:w-144 sm:max-w-full xs:max-w-full p-6 bg-gradient-to-r bg-gray-100 dark:bg-gray-900 rounded-sm text-center overflow-hidden cursor-pointer"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div
-            className="relative w-full md:w-128 h-auto p-6 bg-gradient-to-r from-white via-gray-50 to-white dark:bg-gradient-to-r dark:from-transparent dark:via-gray-800 dark:to-transparent rounded-sm text-center overflow-hidden cursor-pointer"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            className={`relative z-10 sm:max-w-full xs:max-w-full top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+              isTransitioning
+                ? "translate-x-full opacity-0"
+                : "translate-x-0 opacity-100"
+            }`}
           >
-            <div className="absolute inset-0 z-0">
-              <svg
-                className="absolute top-12 right-44 w-12 h-12 opacity-20"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 200 200"
-              >
-                <circle cx="100" cy="100" r="100" fill="#FFD700" />
-              </svg>
-              <svg
-                className="absolute top-44 left-44 w-12 h-12 opacity-20"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 200 200"
-              >
-                <circle cx="100" cy="100" r="100" fill="#9FD2C7" />
-              </svg>
-              <svg
-                className="absolute bottom-20 right-44 w-12 h-12 opacity-20"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 200 200"
-              >
-                <circle cx="100" cy="100" r="100" fill="#FFD700" />
-              </svg>
+            <div>{carouselItems[currentIndex].icon}</div>
+            <div>
+              <h3 className="mt-4 text-2xl md:text-2xl sm:text-sm xs:text-sm text-end font-bold text-gray-800 dark:text-white">
+                {carouselItems[currentIndex].title}
+              </h3>
+              <p className="mt-2 text-end md:text-lg sm:text-xs xs:text-xs text-gray-600 dark:text-gray-400">
+                {carouselItems[currentIndex].description}
+              </p>
             </div>
+          </div>
 
+          <br />
+
+          <div
+            className={`relative z-10 top-5 sm:max-w-full xs:max-w-full flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
+              isTransitioning
+                ? "translate-x-[-100%] opacity-0"
+                : "translate-x-0 opacity-100"
+            }`}
+          >
+            <div>{carouselItemsTwo[currentIndex].icon}</div>
+            <div>
+              <h3 className="mt-4 text-2xl md:text-2xl sm:text-sm xs:text-sm text-start font-bold text-gray-800 dark:text-white">
+                {carouselItemsTwo[currentIndex].title}
+              </h3>
+              <p className="mt-2 text-start md:text-lg sm:text-xs xs:text-xs text-gray-600 dark:text-gray-400">
+                {carouselItemsTwo[currentIndex].description}
+              </p>
+            </div>
+          </div>
+
+          <br />
+
+          <div
+            className={`relative z-10 top-5 sm:max-w-full xs:max-w-full flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+              isTransitioning
+                ? "translate-x-full opacity-0"
+                : "translate-x-0 opacity-100"
+            }`}
+          >
+            <div>{carouselItems[currentIndex].icon}</div>
+            <div>
+              <h3 className="mt-4 text-2xl md:text-2xl sm:text-sm xs:text-sm text-end font-bold text-gray-800 dark:text-white">
+                {carouselItems[currentIndex].title}
+              </h3>
+              <p className="mt-2 text-end md:text-lg sm:text-xs xs:text-xs   text-gray-600 dark:text-gray-400">
+                {carouselItems[currentIndex].description}
+              </p>
+            </div>
+          </div>
+          <br />
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent dark:bg-gray-700">
             <div
-              className={`relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
-                isTransitioning
-                  ? "translate-x-full opacity-0"
-                  : "translate-x-0 opacity-100"
-              }`}
-            >
-              <div>{carouselItems[currentIndex].icon}</div>
-              <div>
-                <h3 className="mt-4 text-2xl text-end font-bold text-gray-800 dark:text-white">
-                  {carouselItems[currentIndex].title}
-                </h3>
-                <p className="mt-2 text-end text-gray-600 dark:text-gray-400">
-                  {carouselItems[currentIndex].description}
-                </p>
-              </div>
-            </div>
-
-            <br />
-
-            <div
-              className={`relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
-                isTransitioning
-                  ? "translate-x-[-100%] opacity-0"
-                  : "translate-x-0 opacity-100"
-              }`}
-            >
-              <div>{carouselItemsTwo[currentIndex].icon}</div>
-              <div>
-                <h3 className="mt-4 text-2xl text-start font-bold text-gray-800 dark:text-white">
-                  {carouselItemsTwo[currentIndex].title}
-                </h3>
-                <p className="mt-2 text-start text-gray-600 dark:text-gray-400">
-                  {carouselItemsTwo[currentIndex].description}
-                </p>
-              </div>
-            </div>
-
-            <br />
-
-            <div
-              className={`relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
-                isTransitioning
-                  ? "translate-x-full opacity-0"
-                  : "translate-x-0 opacity-100"
-              }`}
-            >
-              <div>{carouselItems[currentIndex].icon}</div>
-              <div>
-                <h3 className="mt-4 text-2xl text-end font-bold text-gray-800 dark:text-white">
-                  {carouselItems[currentIndex].title}
-                </h3>
-                <p className="mt-2 text-end text-gray-600 dark:text-gray-400">
-                  {carouselItems[currentIndex].description}
-                </p>
-              </div>
-            </div>
-            <br />
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-300 dark:bg-gray-700">
-              <div
-                className="h-1 bg-gray-800 dark:bg-white"
-                style={{ width: `${progress}%` }}
-              ></div>
-            </div>
+              className="h-1 bg-gray-800 dark:bg-white"
+              style={{ width: `${progress}%` }}
+            ></div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ProcessSection;

@@ -1,9 +1,9 @@
 import { CheckCircleOutlined } from "@ant-design/icons";
 import React from "react";
 
-const WhyUsSection = () => {
-  // Define the data for the blobs
-  const blobsData = [
+function WhyUsSection() {
+
+    const blobsData = [
     {
       title: "Advanced AI",
       description: "Utilizing cutting-edge AI to provide actionable insights.",
@@ -38,31 +38,33 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <div className="py-16 lg:h-100 xs:h-160 xs:py-5 md:px-12 xl:mb-0 md:mb-0 bg-white dark:bg-gray-800 relative overflow-hidden">
-      <div className="mx-auto px-4 relative z-10">
-        <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
-        <span className="relative inline-block">
-              Why Us?
+    <div className="mx-8 my-10">
+      <div className="">
+        <div className="">
+          <h2 className="text-center md:text-center sm:text-start xs:text-start text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
+            Why
+            <span className="relative inline-block ml-2">
+              Us ?
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1418 125"
+                viewBox="0 0 1576 141"
                 fill="#9FD2C7"
               >
-                <path d="M1412.29 72.17c-11.04-5.78-20.07-14.33-85.46-25.24-22.37-3.63-44.69-7.56-67.07-11.04-167.11-22.06-181.65-21.24-304.94-30.56C888.78 1.39 822.57 1.1 756.44 0c-46.63-.11-93.27 1.56-139.89 2.5C365.5 13.55 452.86 7.68 277.94 23.15 202.57 33.32 127.38 45.01 52.07 55.69c-11.23 2.41-22.63 4.17-33.71 7.22C6.1 66.33 5.64 66.19 3.89 67.79c-7.99 5.78-2.98 20.14 8.72 17.5 33.99-9.47 32.28-8.57 178.06-29.66 4.26 4.48 7.29 3.38 18.42 3.11 13.19-.32 26.38-.53 39.56-1.12 53.51-3.81 106.88-9.62 160.36-13.95 18.41-1.3 36.8-3.12 55.21-4.7 23.21-1.16 46.43-2.29 69.65-3.4 120.28-2.16 85.46-3.13 234.65-1.52 23.42.99 1.57-.18 125.72 6.9 96.61 8.88 200.92 27.94 295.42 46.12 40.87 7.91 116.67 23.2 156.31 36.78 3.81 1.05 8.28-.27 10.51-3.58 3.17-3.72 2.66-9.7-.78-13.13-3.25-3.12-8.14-3.44-12.18-5.08-17.89-5.85-44.19-12.09-63.67-16.56l26.16 3.28c23.02 3.13 46.28 3.92 69.34 6.75 10.8.96 25.43 1.81 34.34-4.39 2.26-1.54 4.86-2.75 6.21-5.27 2.76-4.59 1.13-11.06-3.59-13.68ZM925.4 23.77c37.64 1.4 153.99 10.85 196.64 14.94 45.95 5.51 91.89 11.03 137.76 17.19 24.25 4.77 74.13 11.21 101.72 18.14-11.87-1.15-23.77-1.97-35.65-3.06-133.46-15.9-266.8-33.02-400.47-47.21Z"></path>
+                <path d="M153.58 20.56c54.61 7.77 11.57 2.06 114.89 15.59 13.33 1.74 90.26 10.48 91.36 10.58 134.57 12.96 190.69 18.5 388.54 25.15 129.22 1.29 93.08 1.1 154.55.57 81.39-.71 59.62-.04 125.55-4.57 63.95-4.4 45.79-3.03 63.95-4.82 122.74-12.1 74.45-6.7 196.81-22.16.11-.01 87.68-12.88 144.71-23.82l59.43-11.39c1.85-.35 3.34 1.62 4.26 2.89 5.62 7.81 7.57 23.36 5.18 27.51 24.07-1.73 36.84-3.04 53.78-2.26 2.94.14 5.88.72 8.79 1.14 7.63 2.7 13.25 29.31 8.37 33.57a11.5 11.5 0 0 1-6.34 3.04 61.01 61.01 0 0 1-21.5 10.23c-4.78 1.12-7.26 1.09-26.8 2.32-26.15 1.64-20.08 2.59-70.36 10.41-124.17 19.35-260.96 36.26-386.48 42.12-203.77 9.49-418.63-.99-621.76-19.77C188.84 102.05 36.15 75.18 30.07 74.7a10.51 10.51 0 0 1-4.75-1.64c-1.91-1.23-3.06-3.52-4.14-5.42-5.56-9.8-6.47-22.79-4.73-27.16-2.45-1.29-4.88-2.65-7.33-3.91C4.2 34.06-2.72 12.7 1.11 4.47c.85-1.32 1.61-2.4 2.71-3.52C4.57.19 5.83 0 6.95 0c7.42 0 128.62 17.94 146.63 20.56Z"></path>
               </svg>
             </span>
-        </h2>
-        <div className="xs:w-full flex items-center justify-center">
-          <p className="md:w-1/2 xs:w-full text-center text-lg text-gray-600 dark:text-gray-400 mb-12">
-            Opsight AI Pvt Ltd is a Manufacturing Analytics (Industrial-AI,
-            SAAS) Startup. Manufacturing generates the largest volume of data
-            amongst all sectors, which often remains siloed in shop floors &
-            seldom used.
+          </h2>
+        </div>
+        <div className="">
+          <p className="text-3xl md:text-3xl sm:text-xl xs:text-xl text-center md:text-center sm:text-start xs:text-start text-gray-600 dark:text-gray-400">
+            Coupled with our machine monitoring technology, our solutions pave
+            the way for data-driven decision-making, predictive maintenance, and
+            enhanced operational excellence.
           </p>
         </div>
-
-        {/* Blob grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
+      </div>
+      <div className=""></div>
+      <div className="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-5 mt-10">
           {blobsData.map((blob, index) => (
             <div
               key={index}
@@ -86,70 +88,8 @@ const WhyUsSection = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Decorative Animated Elements (behind the cards) */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Cluster of circles */}
-        <div className="absolute top-40 left-5 blur-sm">
-          <svg width="50" height="50">
-            <circle cx="10" cy="10" r="10" fill="#FFD700" />
-            <circle cx="30" cy="30" r="8" fill="#9FD2C7" />
-            <circle cx="40" cy="10" r="6" fill="#FF9AA2" />
-          </svg>
-        </div>
-
-        {/* Additional circles for the background */}
-        <div className="absolute bottom-82 left-40 animate-float blur-sm">
-          <svg width="80" height="80">
-            <circle cx="40" cy="40" r="30" fill="#FF9AA2" />
-            <circle cx="20" cy="20" r="10" fill="#9FD2C7" />
-            <circle cx="60" cy="60" r="10" fill="#FFD700" />
-          </svg>
-        </div>
-
-        <div className="absolute top-32 right-28 blur-sm">
-          <svg width="70" height="70">
-            <circle cx="35" cy="35" r="20" fill="#A0CED9" />
-            <circle cx="50" cy="50" r="15" fill="#F5A623" />
-          </svg>
-        </div>
-
-
-        {/* Small Dots Cluster */}
-        <div className="absolute top-1/4 left-44 blur-sm ">
-          <svg width="150" height="100">
-            {Array.from({ length: 4 }).map((_, rowIndex) =>
-              Array.from({ length: 6 }).map((_, colIndex) => (
-                <circle
-                  key={`${rowIndex}-${colIndex}`}
-                  cx={20 * colIndex + 10}
-                  cy={20 * rowIndex + 10}
-                  r="3"
-                  fill="#9FD2C7"
-                />
-              ))
-            )}
-          </svg>
-        </div>
-
-        {/* More circles for background effect */}
-        <div className="absolute bottom-32 left-20 animate-float blur-sm">
-          <svg width="60" height="60">
-            <circle cx="30" cy="30" r="20" fill="#FF9AA2" />
-            <circle cx="50" cy="50" r="10" fill="#9FD2C7" />
-          </svg>
-        </div>
-
-        <div className="absolute top-10 right-20 blur-sm">
-          <svg width="50" height="50">
-            <circle cx="25" cy="25" r="15" fill="#FFD700" />
-            <circle cx="35" cy="15" r="7" fill="#A0CED9" />
-          </svg>
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default WhyUsSection;
+export default WhyUsSection

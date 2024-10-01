@@ -53,13 +53,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 p-4 flex justify-between items-center transition duration-500 ${
+      className={`sticky top-0 z-50  p-4 flex justify-between items-center  transition duration-500 ${
         isScrolled
           ? "bg-gray-100 dark:bg-gray-700 shadow-md"
           : "bg-white dark:bg-gray-800"
       }`}
     >
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <div className="mr-6">
           <div className="mr-6">
             <NavLink to="/">

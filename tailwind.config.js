@@ -17,6 +17,7 @@ module.exports = {
           
         },
         height: {
+          '50':'100vh',
           '90': '80vh',
           '100': '85vh',
           '110': '92vh',
@@ -25,13 +26,15 @@ module.exports = {
           '160': '200vh'
         },
         screens: {
-          'xs': '120px', 
-          'sm': '430px', 
-          'md': '800px', 
-          'lg': '900px', 
-          'xl': '1200px', 
-          // '2xl': '1536px', 
-          // '3xl': '1920px', 
+          'xs': '370px', 
+          'sm': '400px',
+          // => @media (min-width: 640px) { Tab }
+    
+          'md': '1024px',
+          // => @media (min-width: 1024px) { Lap }
+    
+          'lg': '1280px',
+          // => @media (min-width: 1280px) { Desk }
         },
         animation: {
           marquee: 'marquee 20s linear infinite',

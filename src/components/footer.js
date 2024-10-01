@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="overflow-hidden bg-gray-100 mt-10 dark:bg-gray-900 text-black  dark:text-white py-10 transition-colors duration-500 border-t">
+    <footer className="overflow-hidden bg-gray-100 mt-0 dark:bg-gray-900 text-black  dark:text-white py-10 transition-colors duration-500 border-t">
       <div className="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 xs:grid-cols-2 gap-8">
         {/* Column 1: Company Logo / Branding */}
         <div className="space-y-4 border-r">
@@ -110,7 +110,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-100 dark:bg-gray-900  py-6 mt-10 border-t transition duration-500">
-        <div className="mt-7 mx-auto px-4 flex flex-col md:flex-col xs:flex-row items-center justify-between">
+        <div className="mt-7 mx-auto px-4 flex flex-col md:flex-row xs:flex-row items-center justify-around">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h4 className="text-xl font-bold md:text-center xs:text-start text-gray-900 dark:text-white">Join our newsletter</h4>
             <p className="md:text-center xs:text-start text-gray-600 dark:text-gray-400">

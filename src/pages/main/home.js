@@ -1,11 +1,12 @@
-import React from 'react'
-import Banner from "./Home/banner"
-import Feature from "./Home/feature"
-import Proccess from "./Home/proccess"
-import WhyUs from "./Home/whyus"
-import TrustUs from "./Home/trustus"
-import Offering from "./Home/offering"
-import Faq from "./Home/faq"
+import React from "react";
+import Banner from "./Home/banner";
+import Feature from "./Home/feature";
+import Proccess from "./Home/proccess";
+import WhyUs from "./Home/whyus";
+import TrustUs from "./Home/trustus";
+import Offering from "./Home/offering";
+import Faq from "./Home/faq";
+import "./Home/index.css"
 
 function home() {
   return (
@@ -13,12 +14,12 @@ function home() {
       <Banner />
       <Feature />
       <Proccess />
-      <WhyUs />
-      <TrustUs />
+       <WhyUs />
+       <TrustUs />
       <Offering />
-      <Faq />
+     <Faq />
     </div>
-  )
+  );
 }
 
-export default home
+export default home;

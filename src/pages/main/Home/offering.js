@@ -114,9 +114,9 @@ const OfferingSection = () => {
   };
 
   return (
-    <div className="py-0 h-100 md:h-100 sm:h-100 xs:h-150 xs:py-0 bg-white dark:bg-gray-800 relative overflow-hidden mt-4">
-      <div className="mx-auto px-4 relative z-10">
-        <h2 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white mb-8">
+    <div className="dark:bg-gray-800 relative overflow-hidden mb-20">
+      <div className="mx-auto relative z-10 flex flex-row sm:flex-col xs:flex-col items-center justify-center">
+        <h2 className="ml-8 text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
           Work Smarter with a Smart Platform
         </h2>
         {/* Blob grid */}
@@ -128,7 +128,7 @@ const OfferingSection = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`bg-red-100 px-4 py-2 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+                className={`bg-red-100 px-4 py-3 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-full opacity-0"
                     : "translate-x-0 opacity-100"
@@ -149,10 +149,10 @@ const OfferingSection = () => {
                 </div>
               </div>
 
-              <div className="border-b mt-14"></div>
+              <div className="mt-14"></div>
 
               <div
-                className={`bg-green-100 px-4 py-2 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
+                className={`bg-green-100 px-4 py-4 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-[-100%] opacity-0"
                     : "translate-x-0 opacity-100"

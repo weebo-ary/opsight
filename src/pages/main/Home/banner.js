@@ -1,19 +1,17 @@
-import React from "react";
-import { ArrowRightOutlined } from "@ant-design/icons";
-import IllustrationLight from "../../../assets/Illustration/banner-thumb-bcbc5b3e1123cc303539aba298f1482f.png";
-import "./index.css";
 
-const Banner = () => {
+import IllustrationLight from "../../../assets/Illustration/banner-thumb-bcbc5b3e1123cc303539aba298f1482f.png";
+import { ArrowRightOutlined } from "@ant-design/icons";
+  import React from "react";
+
+function Banner() {
   return (
-    <div className="relative overflow-hidden bg-transparent dark:bg-transparent py-16  transition z-0 h-100 md:h-100 xs:h-150 sm:h-110">
-      <div className="absolute inset-y-0 left-0 w-full max-w-screen-xl -translate-x-1/4 -rotate-6 transform opacity-20 z-0 "></div>
-      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-24 xl:px-36 flex flex-col-reverse md:flex-row xs:flex-col items-center justify-between">
-        <div className="md:w-200 xs:w-120 text-center md:text-left">
-          <h1 className="text-4xl text-gray-700 dark:text-white mb-6 ">
+    <div className="mx-2 md:mx-2 sm:mx-0 h-100 md:h-100 sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center">
+      <div className=" pl-5">
+        <div className="">
+          <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-700 dark:text-white mb-6 ">
             OPSIGHT AI
           </h1>
-          <h1 className="relative text-4xl font-extrabold text-gray-900 md:px-0 sm:px-10 xs:px-10 dark:text-white mb-6 inline-block">
-            Transforming Operations Data Into Actionable{" "}
+          <h1 className="relative text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-6 inline-block">Transforming Operations Data Into Actionable{" "}
             <span className="relative inline-block">
               Insights!
               <svg
@@ -25,32 +23,31 @@ const Banner = () => {
               </svg>
             </span>
           </h1>
-
-          <p className="text-lg text-gray-700 dark:text-gray-400 mb-6">
+        </div>
+        <div className="">
+          <p className="text-4xl md:text-4xl sm:text-xl xs:text-xl text-gray-700 dark:text-gray-400 mb-6">
             Enabling companies to unlock their untapped manufacturing potential
             & achieve operational excellence through AI.
           </p>
-          <div className="flex justify-center md:justify-start space-x-4">
-            <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
-              Get started
-            </button>
-            <button className="px-6 py-3 text-slate-600 dark:text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
-              Learn more <ArrowRightOutlined className="ml-2" />
-            </button>
-          </div>
         </div>
-        <div className="md:w-200 xs:w-96 xs:mt-5 h-72 md:mb-20 z-0">
-          <div className="relative w-full max-w-md mx-auto">
-            <img
-              src={IllustrationLight} // Replace with the actual mockup image URL
-              alt="Mockup"
-              className="w-200 md:w-200 h-auto"
-            />
-          </div>
+        <div className="flex">
+          <button className="px-6 py-3 bg-slate-600 dark:bg-slate-300 text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
+            Get started
+          </button>
+          <button className="px-6 py-3 text-slate-600 dark:text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
+            Learn more <ArrowRightOutlined className="ml-2" />
+          </button>{" "}
         </div>
+      </div>
+      <div className="">
+        <img
+          src={IllustrationLight} // Replace with the actual mockup image URL
+          alt="Mockup"
+          className="w-200 pr-2"
+        />
       </div>
     </div>
   );
-};
+}
 
 export default Banner;
