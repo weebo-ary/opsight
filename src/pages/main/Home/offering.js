@@ -114,9 +114,9 @@ const OfferingSection = () => {
   };
 
   return (
-    <div className="dark:bg-gray-800 relative overflow-hidden mb-20">
-      <div className="mx-auto relative z-10 flex flex-row sm:flex-col xs:flex-col items-center justify-center">
-        <h2 className="ml-8 text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
+    <div className="dark:bg-gray-800 relative overflow-hidden mb-20 md:mb-20 md:mt-20">
+      <div className="mx-auto relative z-10 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center">
+        <h2 className="ml-8 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
           Work Smarter with a Smart Platform
         </h2>
         {/* Blob grid */}

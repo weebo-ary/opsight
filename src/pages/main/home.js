@@ -12,10 +12,10 @@ function home() {
   return (
     <div>
       <Banner />
-      <Feature />
       <Proccess />
+      <Feature />
        <WhyUs />
-       <TrustUs />
+      <TrustUs />
       <Offering />
      <Faq />
     </div>

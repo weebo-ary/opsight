@@ -4,10 +4,10 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="relative mx-2 md:mx-2 sm:mx-0 h-100 lg:mb-20 lg:mt-10 lg:h-auto md:h-auto sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center overflow-hidden">
+    <div className="relative mx-2 md:mx-2 sm:mx-0 h-100 lg:mb-10 lg:mt-10 lg:h-auto md:h-auto sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center overflow-hidden">
       {/* Decorative SVGs */}
       {/* <div className="absolute top-10 right-80 w-96 h-40 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div> */}
-      <div className="absolute bottom-30 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-30 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       {/* <div className="absolute bottom-0 right-0 w-52 h-52 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-6000"></div> */}
 
 
