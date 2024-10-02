@@ -10,6 +10,7 @@ import Support from '../pages/extra-pages/support';
 import NotFound from '../pages/maintenance/404';
 import TrainingIndustry40 from '../pages/extra-pages/training';
 import Consultancy from '../pages/extra-pages/consultancy';
+import EdgeGateway from '../pages/products/edge-gateway';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -66,6 +67,14 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: '/consultancy', element: <Consultancy /> },
+    ],
+  },
+
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { path: '/edge-gateway', element: <EdgeGateway /> },
     ],
   },
 

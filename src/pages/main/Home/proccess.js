@@ -111,7 +111,7 @@ function ProcessSection() {
       <div className=" flex flex-col items-start justify-center gap-10">
         <div className="">
           <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
-            Digitize Your <span className="text-red-500">Processes</span> And
+            Digitize Your <span className="text-orange-500">Processes</span> And
             Gain Analytics From Day One
           </h2>
         </div>
