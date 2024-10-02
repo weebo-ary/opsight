@@ -1,23 +1,10 @@
 import React from "react";
-import Tr1 from "../../assets/Illustration/tr1.png";
-import Tr2 from "../../assets/Illustration/tr2.png";
 import Tr3 from "../../assets/Illustration/tr3.png";
 import Tr4 from "../../assets/Illustration/tr4.png";
 import Tr5 from "../../assets/Illustration/tr5.png";
 import Tr6 from "../../assets/Illustration/tr6.png";
 import Tr7 from "../../assets/Illustration/74.png";
-import Tr8 from "../../assets/Illustration/tr8.png";
 import Tr9 from "../../assets/Illustration/tr9.png";
-import Tr10 from "../../assets/Illustration/tr10.png";
-import Tr11 from "../../assets/Illustration/tr11.png";
-import Tr12 from "../../assets/Illustration/tr12.png";
-import Tr13 from "../../assets/Illustration/tr13.png";
-import Tr14 from "../../assets/Illustration/tr14.png";
-import Tr15 from "../../assets/Illustration/tr15.png";
-import Tr16 from "../../assets/Illustration/tr16.png";
-import Tr17 from "../../assets/Illustration/tr17.png";
-import Tr18 from "../../assets/Illustration/tr18.png";
-import Tr19 from "../../assets/Illustration/tr19.png";
 
 
 function TrainingIndustry40() {
