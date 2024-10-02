@@ -8,6 +8,8 @@ import AboutUs from '../pages/main/about';
 import Contact from '../pages/main/contact';
 import Support from '../pages/extra-pages/support';
 import NotFound from '../pages/maintenance/404';
+import TrainingIndustry40 from '../pages/extra-pages/training';
+import Consultancy from '../pages/extra-pages/consultancy';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -48,6 +50,22 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: '/support', element: <Support /> },
+    ],
+  },
+
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { path: '/training', element: <TrainingIndustry40 /> },
+    ],
+  },
+
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { path: '/consultancy', element: <Consultancy /> },
     ],
   },
 

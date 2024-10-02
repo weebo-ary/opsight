@@ -171,7 +171,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="overflow-hidden p-10 bg-white dark:bg-gray-800 mb-20">
+    <div className="overflow-hidden p-14 bg-white dark:bg-gray-800 mb-20">
       <div className="max-w-5xl sm:max-w-full xs:max-w-full mx-auto px-4">
         <h2 className="text-center text-4xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
         Frequently Asked Questions

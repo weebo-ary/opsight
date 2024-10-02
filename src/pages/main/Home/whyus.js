@@ -38,7 +38,7 @@ function WhyUsSection() {
   ];
 
   return (
-    <div className="mx-8 my-10">
+    <div className="mx-8 my-10 p-5">
       <div className="">
         <div className="">
           <h2 className="text-center md:text-center sm:text-start xs:text-start text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">

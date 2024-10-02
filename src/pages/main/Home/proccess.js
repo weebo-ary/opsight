@@ -106,7 +106,7 @@ function ProcessSection() {
   };
 
   return (
-    <div className="mx-8 flex md:flex-row sm:flex-col xs:flex-col mt-20 sm:mt-10 xs:mt-10 mb-20 bg-gray-100 dark:bg-gray-900 p-5 rounded-lg">
+    <div className="mx-8 flex md:flex-row sm:flex-col xs:flex-col mt-20 sm:mt-10 xs:mt-10 mb-20 bg-gray-100 dark:bg-gray-900 p-10 rounded-lg">
         <div className="absolute bottom-30 left-30 w-64 h-64 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       <div className=" flex flex-col items-start justify-center gap-10">
         <div className="">

@@ -8,7 +8,7 @@ import {
   DatabaseOutlined,
   RightOutlined,
 } from "@ant-design/icons";
-import FeatureImage from "../../../assets/Illustration/business-profit-1e734b0bc4702700164807fcef06532a.png";
+import FeatureImage from "../../../assets/Illustration/solution-img.png";
 import { Link } from "react-router-dom";
 
 function SolutionSection() {
@@ -53,7 +53,7 @@ function SolutionSection() {
   };
 
   return (
-    <div className="mx-2">
+    <div className="mx-2 p-5">
       <div className="">
         <div className="">
           <h2 className="text-center md:text-center sm:text-start xs:text-start sm:mx-4 xs:mx-3 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
@@ -80,7 +80,7 @@ function SolutionSection() {
       </div>
       <div className=" flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center gap-10 md:gap-10 sm:gap-10">
         <div className="">
-          <img src={FeatureImage} alt="Placeholder" className="w-150 md:w-150 sm:w-96 xs:w-64" />
+          <img src={FeatureImage} alt="Placeholder" className="w-150 md:w-150 sm:w-96 xs:w-full rounded-3xl" />
         </div>
         <div className="w-1/2 md:w-1/2 sm:w-full xs:w-full flex flex-col gap-2">
             {features.map((feature, index) => (
