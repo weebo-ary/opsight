@@ -135,7 +135,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="flex items-center space-x-4 md:space-x-4 sm:space-x-3 xs:space-x-3">
+      <div className="flex items-center space-x-4 md:space-x-4 sm:space-x-3 xs:space-x-2">
         <div
           className="md:hidden xs:flex p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-black dark:text-white transition duration-500"
           onClick={toggleSidebar}
@@ -143,12 +143,12 @@ const Navbar = () => {
           <MenuOutlined />
         </div>
         <ThemeToggle onThemeChange={handleThemeChange} />
-        <img
+        {/* <img
           src="https://via.placeholder.com/150"
           alt="User Avatar"
           className="h-5 w-5 rounded-full"
-        />
-        <button className="flex items-center justify-center p-3 md:p-5 md:py-2 sm:p-2 xs:p-2 md:ml-0 xs:ml-5 bg-gray-800 hover:bg-gray-600 dark:hover:bg-gray-900 dark:bg-gray-700 text-white rounded-lg">
+        /> */}
+        <button className="flex items-center justify-center p-3 md:p-5 md:py-2 sm:p-2 xs:p-2 md:ml-0 bg-gray-800 hover:bg-gray-600 dark:hover:bg-gray-900 dark:bg-gray-700 text-white rounded-lg">
           <span className="md:text-xs sm:text-xs xs:text-xs xs:flex xs:items-center xs:justify-center">Login <LoginOutlined style={{marginLeft:'5px'}}/></span> 
         </button>
       </div>
