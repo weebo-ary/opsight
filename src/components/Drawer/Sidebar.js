@@ -10,10 +10,14 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import DropdownMenu from '../dropdown/DropdownMenu';
+import DropdownMenuProducts from "../dropdown/DropDownProducts";
+import DropdownMenuServices from "../dropdown/DropDownService";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpenProduct, setDropdownProduct] = useState(false);
+  const [dropdownOpenServices, setDropdownServices] = useState(false);
 
   return (
     <div
@@ -64,6 +68,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           >
             <ExclamationCircleOutlined /> About Us
           </NavLink>
+          <div
+            className="relative text-lg ml-3 font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            onMouseEnter={() => setDropdownProduct(true)}
+            onMouseLeave={() => setDropdownProduct(false)}
+          >
+            <DotChartOutlined /> <span style={{ cursor: "pointer" }}>Products</span>
+            {dropdownOpenProduct && <DropdownMenuProducts />}
+          </div>
           {/* Solutions Dropdown */}
           <div className="relative">
             <div
@@ -75,17 +87,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </div>
             {dropdownOpen && <DropdownMenu />}
           </div>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive
-                ? 'block py-2 px-4 text-lg font-medium text-indigo-600 dark:text-indigo-400'
-                : 'block py-2 px-4 text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
-            }
-            onClick={toggleSidebar}
+          <div
+            className="relative text-lg ml-3 font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            onMouseEnter={() => setDropdownServices(true)}
+            onMouseLeave={() => setDropdownServices(false)}
           >
-            <ControlOutlined /> Services
-          </NavLink>
+            <ControlOutlined /> <span style={{ cursor: "pointer" }}>Services</span>
+            {dropdownOpenServices && <DropdownMenuServices />}
+          </div>
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>

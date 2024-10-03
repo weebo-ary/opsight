@@ -3,9 +3,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="relative h-auto flex flex-col justify-center items-center text-start p-8 ">
-      <div className="text-center mb-10">
-        <h2 className="text-6xl p-8">Designed And Developed By {" "}
+    <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
+      <div className="text-center md:text-center sm:text-start xs:text-start mb-10">
+        <h2 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl p-8">Designed And Developed By {" "}
 
         <span
             className="relative inline-block"
@@ -15,9 +15,9 @@ function About() {
           </span>
 
         </h2>
-        <p className="text-2xl p-8">A gateway device that industry leaders trust.</p>
+        <p className="text-2xl md:text-2xl sm:text-xl xs:text-xl p-8">A gateway device that industry leaders trust.</p>
       </div>
-      <div className="grid grid-cols-3 max-w-6xl gap-10">
+      <div className="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 max-w-6xl gap-10">
         <div className="bg-grey-300 w-full shadow-lg dark:shadow-2xl h-auto p-8 rounded-lg transition cursor-pointer hover:scale-105 duration-30">
           <PartitionOutlined style={{fontSize:"4rem", marginBottom:"1rem"}}/>
           <h2 className="text-2xl font-semibold text-start mb-4">Design</h2>

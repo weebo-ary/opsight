@@ -1,13 +1,12 @@
 import React from "react";
-import TypographyEffect from "../../../components/utils/TypographyEffect";
 import { CheckCircleFilled } from "@ant-design/icons";
 
 const WhyUs = () => {
   return (
-    <div className="relative h-auto md:mt-10 md:mb-10 max-w-7xl flex flex-row-reverse justify-center items-center text-start p-8 gap-20">
+    <div className="relative h-auto md:mt-10 md:mb-10 max-w-7xl flex md:flex flex-row-reverse md:flex-row-reverse sm:flex-col xs:flex-col justify-center items-center text-start p-8 gap-20">
       {/* Banner Content */}
       <div className="relative max-w-3xl px-4 md:px-0">
-        <h1 className="text-5xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+        <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">
           Why OpsightAI?
         </h1>
         <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-10">

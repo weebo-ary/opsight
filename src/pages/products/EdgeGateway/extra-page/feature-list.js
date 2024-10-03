@@ -19,7 +19,7 @@ import {
 
 function FeatureList() {
   return (
-    <div className="grid grid-cols-5 gap-20 p-4 max-w-5xl">
+    <div className="grid grid-cols-5 md:grid-cols-5 sm:grid-cols-2 xs:grid-cols-2 gap-20 p-4 max-w-5xl">
         <div className="text-center">
           <h2 className="text-xl ">
             <RadarChartOutlined style={{ fontSize: "3rem" }} />

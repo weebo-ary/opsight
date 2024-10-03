@@ -6,11 +6,11 @@ const BannerWithFadingGridBackground = () => {
   const gridItems = Array.from({ length: 60 });
 
   return (
-    <div className="relative min-h-screen flex justify-center items-center text-start p-8">
+    <div className="relative min-h-screen flex md:flex-row sm:flex-col xs:flex-col justify-center items-center text-start p-8">
       {/* Grid Background with Fading Effect */}
       <div className="absolute inset-0 flex justify-center items-center">
         <div
-          className="grid grid-cols-8 grid-rows-8 w-full h-full gap-0 opacity-10 dark:opacity-10"
+          className="grid md:grid sm:hidden xs:hidden grid-cols-8 grid-rows-8 md:grid-cols-8 md:grid-rows-8 w-full h-full gap-0 opacity-10 dark:opacity-10"
           style={{
             maskImage: "linear-gradient(to right, black 30%, transparent 70%)",
             WebkitMaskImage:
@@ -28,7 +28,7 @@ const BannerWithFadingGridBackground = () => {
 
       {/* Banner Content */}
       <div className="relative max-w-3xl px-4 md:px-0">
-        <h1 className="text-6xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+        <h1 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">
           Connect Anything or{" "}
           <span
             className="relative inline-block"
@@ -48,7 +48,7 @@ const BannerWithFadingGridBackground = () => {
           aliqua.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-start space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start space-y-4 md:space-y-0 md:space-x-4">
           <button className="bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
             Get started
           </button>
