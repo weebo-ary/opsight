@@ -143,11 +143,11 @@ const Navbar = () => {
           <MenuOutlined />
         </div>
         <ThemeToggle onThemeChange={handleThemeChange} />
-        {/* <img
-          src="https://via.placeholder.com/150"
-          alt="User Avatar"
-          className="h-5 w-5 rounded-full"
-        /> */}
+          {/* <img
+            src="https://via.placeholder.com/150"
+            alt="User Avatar"
+            className="h-5 w-5 rounded-full"
+          /> */}
         <button className="flex items-center justify-center p-3 md:p-5 md:py-2 sm:p-2 xs:p-2 md:ml-0 bg-gray-800 hover:bg-gray-600 dark:hover:bg-gray-900 dark:bg-gray-700 text-white rounded-lg">
           <span className="md:text-xs sm:text-xs xs:text-xs xs:flex xs:items-center xs:justify-center">Login <LoginOutlined style={{marginLeft:'5px'}}/></span> 
         </button>

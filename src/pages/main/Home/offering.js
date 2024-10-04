@@ -1,5 +1,5 @@
 import { CheckCircleOutlined, WarningOutlined } from "@ant-design/icons";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const OfferingSection = () => {
   const blobsData = [
@@ -27,7 +27,7 @@ const OfferingSection = () => {
     {
       title: "Unprecedented Downtime",
       description:
-        " Unplanned equipment failures or system outages that disrupt production and lead to significant losses.",
+        "Unplanned equipment failures or system outages that disrupt production and lead to significant losses.",
       color: "#9FD2C7",
       icon: <WarningOutlined />,
     },
@@ -51,7 +51,7 @@ const OfferingSection = () => {
     {
       title: "Higher OEE:",
       description:
-        " Improved Overall Equipment Effectiveness (OEE), maximizing the use of machinery and resources to enhance productivity",
+        "Improved Overall Equipment Effectiveness (OEE), maximizing the use of machinery and resources to enhance productivity",
       color: "#9FD2C7",
       icon: <CheckCircleOutlined />,
     },
@@ -82,6 +82,9 @@ const OfferingSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [isVisible, setIsVisible] = useState(false); // For scroll animation
+
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const handleNext = () => {
@@ -102,7 +105,28 @@ const OfferingSection = () => {
       };
     }
   }, [currentIndex, isPaused, blobsData.length]);
- 
+
+  // Scroll-based animation using IntersectionObserver
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsVisible(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 } // Trigger when 20% of the section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   // Handlers for mouse enter and leave
   const handleMouseEnter = () => {
@@ -114,21 +138,33 @@ const OfferingSection = () => {
   };
 
   return (
-    <div className="dark:bg-gray-800 relative overflow-hidden mb-20 md:mb-20 md:mt-20">
-      <div className="mx-auto relative z-10 flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center">
-        <h2 className="ml-8 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
+    <div
+      ref={sectionRef}
+      className="dark:bg-gray-800 relative overflow-hidden mb-20 md:mb-20 md:mt-20"
+    >
+      <div className="mx-auto relative z-10 flex flex-col md:flex-row sm:flex-col xs:flex-col items-center justify-center">
+        <h2
+          className={`ml-8 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white transition-all duration-1000 ease-in-out ${
+            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
+          }`}
+        >
           Work Smarter with a Smart Platform
         </h2>
+
         {/* Blob grid */}
         <div className="flex flex-row items-center justify-center gap-8">
-          <div className=" flex flex-col items-center justify-center">
+          <div
+            className={`flex flex-col items-center justify-center transition-all duration-1000 ease-in-out ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
+            }`}
+          >
             <div
-              className=" relative w-full md:w-160 h-auto p-6 bg-gradient-to-r bg-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-gray-800 dark:to-transparent rounded-sm text-center overflow-hidden cursor-pointer"
+              className="relative w-full md:w-160 h-auto p-6 bg-gradient-to-r bg-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-gray-800 dark:to-transparent rounded-sm text-center overflow-hidden cursor-pointer"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`bg-red-100 px-4 py-3 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+                className={`bg-red-100 px-4 py-3 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-full opacity-0"
                     : "translate-x-0 opacity-100"
@@ -142,7 +178,7 @@ const OfferingSection = () => {
                     <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-end font-bold text-gray-800">
                       {blobsData[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl  md:text-xl xs:text-lg text-end text-gray-600">
+                    <p className="mt-2 text-xl md:text-xl xs:text-lg text-end text-gray-600">
                       {blobsData[currentIndex].description}
                     </p>
                   </div>

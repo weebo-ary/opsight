@@ -1,4 +1,4 @@
-import { CheckCircleOutlined } from "@ant-design/icons";
+import {SettingOutlined } from "@ant-design/icons";
 import React from "react";
 
 function WhyUsSection() {
@@ -62,7 +62,7 @@ function WhyUsSection() {
             >
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-                  <CheckCircleOutlined className="text-black dark:text-white text-2xl" />
+                  <SettingOutlined className="text-black dark:text-white text-2xl animate-spin" />
                 </div>
               </div>
 

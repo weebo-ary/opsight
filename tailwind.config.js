@@ -37,12 +37,17 @@ module.exports = {
           // => @media (min-width: 1280px) { Desk }
         },
         animation: {
+          slideUp: 'slideUp 1s ease-out backwards',
           marquee: 'marquee 20s linear infinite',
         },
         keyframes: {
           marquee: {
             '0%': { transform: 'translateX(100%)' },
             '100%': { transform: 'translateX(-100%)' },
+          },
+          slideUp: {
+            '0%': { transform: 'translateY(100%)' },
+            '100%': { transform: 'translateY(0)' },
           },
         },
     },

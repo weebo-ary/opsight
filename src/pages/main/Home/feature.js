@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   CheckCircleOutlined,
   ThunderboltOutlined,
@@ -42,6 +42,9 @@ function SolutionSection() {
     },
   ];
   const [expandedIndex, setExpandedIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false); // Visibility state for on-scroll animation
+
+  const sectionRef = useRef(null);
 
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? -1 : index);
@@ -52,8 +55,40 @@ function SolutionSection() {
     console.log("Navigating to:", viewMoreData);
   };
 
+  // IntersectionObserver for scroll animations
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.3, // Trigger when 30% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Fade in when the section is visible
+        } else {
+          setIsVisible(false); // Fade out when the section is not visible
+        }
+      });
+    }, observerOptions);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="mx-2 p-5">
+    <div
+      ref={sectionRef}
+      className={`mx-2 p-5 transition-opacity duration-1000 transform ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`} // Apply fade-in and fade-out animation based on visibility state
+    >
       <div className="">
         <div className="">
           <h2 className="text-center md:text-center sm:text-start xs:text-start sm:mx-4 xs:mx-3 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
@@ -80,46 +115,52 @@ function SolutionSection() {
       </div>
       <div className=" flex flex-row md:flex-row sm:flex-col xs:flex-col items-center justify-center gap-10 md:gap-10 sm:gap-10">
         <div className="">
-          <img src={FeatureImage} alt="Placeholder" className="w-150 md:w-150 sm:w-96 xs:w-full rounded-3xl" />
+          <img
+            src={FeatureImage}
+            alt="Placeholder"
+            className="w-150 md:w-150 sm:w-96 xs:w-full rounded-3xl"
+          />
         </div>
         <div className="w-1/2 md:w-1/2 sm:w-full xs:w-full flex flex-col gap-2">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="p-4 bg-white dark:bg-transparent flex flex-col rounded-lg cursor-pointer"
-                onClick={() => toggleExpand(index)}
-              >
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-3">
-                    <div className="text-2xl text-blue-400">{feature.icon}</div>
-                    <h3 className="text-2xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl font-semibold text-black dark:text-white">
-                      {feature.title}
-                    </h3>
-                  </div>
-                  <div>
-                    {expandedIndex === index ? (
-                      <UpOutlined className="text-black dark:text-white" />
-                    ) : (
-                      <DownOutlined className="text-gray-400" />
-                    )}
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="p-4 bg-white dark:bg-transparent flex flex-col rounded-lg cursor-pointer"
+              onClick={() => toggleExpand(index)}
+            >
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-3">
+                  <div className="text-2xl text-blue-400">{feature.icon}</div>
+                  <h3 className="text-2xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl font-semibold text-black dark:text-white">
+                    {feature.title}
+                  </h3>
+                </div>
+                <div>
+                  {expandedIndex === index ? (
+                    <UpOutlined className="text-black dark:text-white" />
+                  ) : (
+                    <DownOutlined className="text-gray-400" />
+                  )}
+                </div>
+              </div>
+              {expandedIndex === index && (
+                <div className="mt-4 text-gray-400">
+                  <p>{feature.description}</p>
+                  <div className="mt-4">
+                    <Link
+                      to={feature.viewMoreData}
+                      onClick={(event) =>
+                        handleViewMore(event, feature.viewMoreData)
+                      }
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-500"
+                    >
+                      View More <RightOutlined className="ml-2" />
+                    </Link>
                   </div>
                 </div>
-                {expandedIndex === index && (
-                  <div className="mt-4 text-gray-400">
-                    <p>{feature.description}</p>
-                    <div className="mt-4">
-                      <Link
-                      to={feature.viewMoreData}
-                        onClick={(event) => handleViewMore(event, feature.viewMoreData)} // Pass the specific link or data
-                        className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-500"
-                      >
-                        View More <RightOutlined className="ml-2" />
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
