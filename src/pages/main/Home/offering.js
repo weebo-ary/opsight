@@ -120,12 +120,6 @@ const OfferingSection = () => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
   }, []);
 
   // Handlers for mouse enter and leave

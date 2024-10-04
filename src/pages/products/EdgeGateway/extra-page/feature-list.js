@@ -130,12 +130,6 @@ function FeatureList() {
     featureRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
-
-    return () => {
-      featureRefs.current.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
-    };
   }, []);
 
   return (

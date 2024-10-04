@@ -29,11 +29,6 @@ const BannerWithFadingGridBackground = () => {
 
     if (textRef.current) observer.observe(textRef.current);
     if (imageRef.current) observer.observe(imageRef.current);
-
-    return () => {
-      if (textRef.current) observer.unobserve(textRef.current);
-      if (imageRef.current) observer.unobserve(imageRef.current);
-    };
   }, []);
 
   return (

@@ -25,13 +25,6 @@ function About() {
     cardsRef.current.forEach((card) => {
       if (card) observer.observe(card);
     });
-
-    return () => {
-      // Cleanup observer when component unmounts
-      cardsRef.current.forEach((card) => {
-        if (card) observer.unobserve(card);
-      });
-    };
   }, []);
 
   const cardsData = [
