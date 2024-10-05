@@ -23,28 +23,28 @@ const DropdownMenu = () => {
     <div className="md:absolute xs:relative md:border-t-0 xs:border-t top-full md:w-128 xs:w-72 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-4 z-10 md:flex">
       <div className="md:w-1/2 xs:w-1/2 md:border-r border-gray-100 dark:border-gray-700 pr-4">
         <Link
-          to="/library"
+          to="/cnc-monitoring"
           className="flex md:w-36 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <BookOutlined className="text-xs mr-3" /> CNC Monitoring
+          <BookOutlined className="text-xs mr-3" /> CNC & Line Monitoring
         </Link>
         <Link
-          to="/documentation"
+          to="/robot-monitoring"
           className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
           <SnippetsOutlined className="text-xs mr-3" /> Robot Monitoring
         </Link>
-        <Link
+        {/* <Link
           to="/academy"
           className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
           <ExpandAltOutlined className="text-xs mr-3" /> Assembly Line Monitoring
-        </Link>
+        </Link> */}
         <Link
-          to="/portal"
+          to="/energy-monitoring"
           className="flex md:w-44 xs:w-48 text-sm items-center px-2 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
         >
-          <ProjectOutlined className="text-xs mr-3" /> Edge Monitoring
+          <ProjectOutlined className="text-xs mr-3" /> Energy Monitoring
         </Link>
         <br/>
       </div>
@@ -59,6 +59,7 @@ const DropdownMenu = () => {
         <p className="text-gray-400 text-xs dark:text-gray-300 mb-4">
           Customer Ratings : <StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarOutlined />
         </p>
+        <div className="border-b mb-3"> </div>
         <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-0 xs:hidden md:flex">
           <KeyOutlined style={{marginRight:"4px", fontSize:"16px"}}/> Key Features
         </h3>

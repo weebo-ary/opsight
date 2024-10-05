@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import { useState, useEffect } from "react";
 import LightLogo from "./assets/Logo/LightLogo.png";
 import DarkLogo from "./assets/Logo/DarkLogo.png";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,9 +57,12 @@ function App() {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 text-black dark:text-white min-h-screen transition duration-500 overflow-hidden">
+    <div className="bg-white dark:bg-gray-800 text-black dark:text-white min-h-screen transition duration-500">
+      <ScrollToTop />
       <Navbar />
-      <Outlet />
+      <div className="overflow-hidden">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
