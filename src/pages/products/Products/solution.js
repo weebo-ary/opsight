@@ -1,9 +1,5 @@
 import {
-  ArrowRightOutlined,
-  CodeSandboxOutlined,
-  MessageOutlined,
-  PartitionOutlined,
-} from "@ant-design/icons";
+  ArrowRightOutlined} from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import CNCImg from "../../../assets/Illustration/platform-cnc.png";
