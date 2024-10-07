@@ -63,7 +63,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [{ path: "/edge-gateway", element: <EdgeGateway /> }],
+    children: [{ path: "/iiot-gateway", element: <EdgeGateway /> }],
   },
 
   {

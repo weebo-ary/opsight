@@ -21,57 +21,27 @@ const features = [
   {
     icon: <RadarChartOutlined style={{ fontSize: "3rem" }} />,
     title: "Processor",
-    description: "Broadcom BCM2712 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU",
+    description: "Quad-core ARM CPU ( 2.4GHz)",
   },
   {
     icon: <BorderOuterOutlined style={{ fontSize: "3rem" }} />,
     title: "Ethernet Port",
-    description: "Gigabit Ethernet, with PoE+ support (requires separate PoE+ HAT)",
+    description: "Gigabit Ethernet with PoE support",
   },
   {
     icon: <UsbOutlined style={{ fontSize: "3rem" }} />,
     title: "USB Port",
-    description: "2 × USB 3.0 ports, supporting simultaneous 5Gbps operation, 2 × USB 2.0 ports",
-  },
-  {
-    icon: <ClockCircleOutlined style={{ fontSize: "3rem" }} />,
-    title: "Clock",
-    description: "Built-in real-time clock with battery backup",
-  },
-  {
-    icon: <SisternodeOutlined style={{ fontSize: "3rem" }} />,
-    title: "Bluetooth",
-    description: "Bluetooth 5.0, BLE",
-  },
-  {
-    icon: <BulbOutlined style={{ fontSize: "3rem" }} />,
-    title: "Indication",
-    description: "LED for Power Supply",
-  },
-  {
-    icon: <InsertRowAboveOutlined style={{ fontSize: "3rem" }} />,
-    title: "Mounting",
-    description: "Wall Mounting",
-  },
-  {
-    icon: <BranchesOutlined style={{ fontSize: "3rem" }} />,
-    title: "Memory",
-    description: "32GB (SD Card) / 64GB (SD Card)",
+    description: "Multiple USB 3.0 and 2.0",
   },
   {
     icon: <PoweroffOutlined style={{ fontSize: "3rem" }} />,
     title: "Power Supply",
-    description: "5V/5A DC power",
+    description: "5V DC power",
   },
   {
     icon: <PicCenterOutlined style={{ fontSize: "3rem" }} />,
     title: "RAM",
     description: "4GB / 8GB",
-  },
-  {
-    icon: <LinuxOutlined style={{ fontSize: "3rem" }} />,
-    title: "OS",
-    description: "Linux",
   },
   {
     icon: <PicLeftOutlined style={{ fontSize: "3rem" }} />,
@@ -86,12 +56,12 @@ const features = [
   {
     icon: <ImportOutlined style={{ fontSize: "3rem" }} />,
     title: "Digital Input",
-    description: "Yes",
+    description: "Configurable digital inputs",
   },
   {
     icon: <ExportOutlined style={{ fontSize: "3rem" }} />,
     title: "Digital Output",
-    description: "Yes",
+    description: "Configurable digital outputs",
   },
 ];
 
@@ -133,7 +103,7 @@ function FeatureList() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 p-8 max-w-7xl mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-20 p-8 lg:w-220">
       {features.map((feature, index) => (
         <div
           key={index}

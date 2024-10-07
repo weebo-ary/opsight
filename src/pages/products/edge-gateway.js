@@ -11,8 +11,8 @@ function EdgeGateway() {
     <div>
       <Banner />
       <About />
-      <WhyUs />
       <Features />
+      <WhyUs />
       <TrustUs />
       <Connect />
     </div>

@@ -32,40 +32,48 @@ const WhyUs = () => {
       }`}
     >
       {/* Banner Content */}
-      <div className="relative max-w-3xl px-4 md:px-0">
+      <div className="relative max-w-6xl px-4 md:px-0">
         <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-          Why OpsightAI?
+          Advantages of using <span className="text-orange-500">Edge Gateway</span>
         </h1>
-        <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-10">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
 
-        <div className="flex flex-col md:flex-col items-start justify-start rounded-lg">
-          <p className="text-base md:text-2xl font-bold text-black dark:text-white mb-5">
-            Communication Protocols:
-          </p>
-          <h2 className="text-lg flex gap-3 mb-2">
+        <div className="flex flex-col md:flex-col items-start justify-start gap-5 rounded-lg">
+          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+            <span className="w-full">Enhanced Connectivity</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
-            Modbus TCP/IP
+            <span className="text-gray-300 w-full">
+              Integrate various industrial devices and sensors for seamless data
+              flow.
+            </span>
           </h2>
-          <h2 className="text-lg flex gap-3 mb-2">
+          <h2 className="text-lg flex items-center justify-center gap-3 mb-2 ">
+            <span className="w-full">Immediate Insights</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
-            Modbus RTU (RS 232 and RS 485)
+            <span className="text-gray-300 w-full">
+              Local processing allows for real-time analytics and faster
+              decision-making.{" "}
+            </span>
           </h2>
-          <h2 className="text-lg flex gap-3 mb-2">
+          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+            <span className="w-full">Flexible Deployment</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
-            OPC UA
+            <span className="text-gray-300 w-full">
+              Easily deploy in various environments with multiple connectivity
+              options.
+            </span>
           </h2>
-          <h2 className="text-lg flex gap-3">
+          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+            <span className="w-full">No Data Loss</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
-            Ethernet/IP
+            <span className="text-gray-300 w-full">
+              Ensure data integrity and consistency with reliable local
+              processing and communication protocols.
+            </span>
           </h2>
         </div>
       </div>
       <img
-        src="http://placehold.it/700x400"
+        src="http://placehold.it/600x500"
         className="mt-10 md:mt-0 md:ml-5"
         alt="banner-img"
       />

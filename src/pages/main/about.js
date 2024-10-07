@@ -7,18 +7,24 @@ import DevanshImage from "../../assets/Images/devansha.png";
 import RamImage from "../../assets/Images/ram1.jpeg";
 import PrakashImage from "../../assets/Images/prakash.jpg";
 import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
+import Banner from "../../assets/Illustration/about-banner.jpg"
 
 const AboutUs = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       {/* First Section: Introduction */}
-      <section className="relative py-16 bg-gradient-to-r from-white via-gray-100 to-white dark:from-gray-800 dark:via-gray-800 dark:to-gray-800">
+      <section className="h-auto relative py-16 bg-gradient-to-r from-white via-gray-100 to-white dark:from-gray-800 dark:via-gray-800 dark:to-gray-800">
+      <img
+        src={Banner}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 dark:opacity-20"
+      />
         <div className="absolute inset-0 bg-opacity-30"></div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <h1 className="text-center text-5xl font-extrabold text-gray-900 dark:text-white mb-6">
+        <div className="mx-auto px-6 lg:px-8 relative z-10">
+          <h1 className="text-center text-6xl font-extrabold text-gray-900 dark:text-white mb-6">
             OPSIGHT AI
           </h1>
-          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-center">
+          <p className="text-3xl text-gray-700 dark:text-gray-300 mx-auto text-center">
           Opsight AI Pvt Ltd is an Industrial-AIoT, SaaS Startup revolutionizing the way manufacturing companies harness data. At OpsightAI, we enable manufacturers to make smarter decisions, optimize operations & unlock their full manufacturing potential through intelligent data analytics.
           </p>
         </div>
@@ -26,16 +32,16 @@ const AboutUs = () => {
 
       {/* Vision and Mission Section */}
       <section className="py-16 bg-white dark:bg-gray-800 transition-colors duration-500">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
+        <div className="mx-auto ">
+          <div className=" grid grid-cols-1 md:grid-cols-1 gap-12">
             {/* Vision */}
-            <div className="text-start flex flex-row items-center justify-center">
-              <img src={AboutIllustration} width={400} alt="about-us" />
-              <div className="w-1/2">
+            <div className="text-start flex flex-row items-center gap-20 justify-center">
+              <img src={AboutIllustration} width={1000} alt="about-us"/>
+              <div className="w-full">
                 <h2 className="text-6xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
                   Our Vision
                 </h2>
-                <p className="text-2xl text-gray-700 dark:text-gray-300">
+                <p className="text-3xl text-gray-700 dark:text-gray-300">
                 Enabling Indian manufacturers to achieve operational excellence & shift towards data-driven operations.
                 </p>
               </div>
@@ -43,12 +49,12 @@ const AboutUs = () => {
 
             {/* Mission */}
             <div className="text-start flex flex-row-reverse items-center justify-center">
-              <img src={MissionIllustration} width={400} alt="mission" />
-              <div className="w-1/2">
+              <img src={MissionIllustration} width={500} alt="mission" />
+              <div className="w-full ml-8">
                 <h2 className="text-6xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
                   Our Mission
                 </h2>
-                <p className="text-2xl text-gray-700 dark:text-gray-300">
+                <p className="text-3xl text-gray-700 dark:text-gray-300">
                 Empowering manufacturers to leverage IIoT & AI/ML to make informed decisions through predictive insights & address their biggest operational concerns: **Equipment Downtime & Rework Costs.**
                 </p>
               </div>
@@ -89,7 +95,7 @@ const AboutUs = () => {
             )}
           </svg>
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="w-full mx-auto px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-10">
             Meet Our Founders
           </h2>
@@ -147,7 +153,7 @@ const AboutUs = () => {
 
       {/* Employees Section */}
       <section className="py-16 bg-white dark:bg-gray-800 transition-colors duration-500">
-        <div className="w-200 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="w-200 w-full mx-auto px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-10">
             Meet Our Team
           </h2>
