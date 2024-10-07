@@ -34,9 +34,9 @@ const ThemeToggle = ({ onThemeChange }) => {
       className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-white transition duration-500"
     >
       {theme === "dark" ? (
-        <SunOutlined style={{ fontSize: "16px" }} />
+        <SunOutlined style={{ fontSize: "24px" }} />
       ) : (
-        <MoonOutlined style={{ fontSize: "16px" }} />
+        <MoonOutlined style={{ fontSize: "24px" }} />
       )}
     </button>
   );

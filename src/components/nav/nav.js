@@ -3,7 +3,6 @@ import ThemeToggle from "../ThemeToggle";
 import DropdownMenu from "../dropdown/DropdownMenu";
 import DropdownMenuProducts from "../dropdown/DropDownProducts";
 import DarkLogo from "../../assets/Logo/DarkLogo.png";
-import LightLogo from "../../assets/Logo/LightLogo.png";
 import { LoginOutlined, MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
