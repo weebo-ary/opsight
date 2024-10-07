@@ -5,8 +5,6 @@ import {
   KeyOutlined,
   ProjectOutlined,
   SnippetsOutlined,
-  StarFilled,
-  StarOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
