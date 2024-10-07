@@ -1,19 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   BorderOuterOutlined,
-  BranchesOutlined,
-  BulbOutlined,
-  ClockCircleOutlined,
   ExportOutlined,
   ImportOutlined,
-  InsertRowAboveOutlined,
-  LinuxOutlined,
   PicCenterOutlined,
   PicLeftOutlined,
   PicRightOutlined,
   PoweroffOutlined,
   RadarChartOutlined,
-  SisternodeOutlined,
   UsbOutlined,
 } from "@ant-design/icons";
 
