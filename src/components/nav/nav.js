@@ -55,8 +55,8 @@ const Navbar = () => {
     <nav
       className={`sticky top-0 z-50  p-4 flex justify-between items-center  transition duration-500 ${
         isScrolled
-          ? "bg-gray-100 dark:bg-gray-700 shadow-md"
-          : "bg-white dark:bg-gray-800"
+          ? "bg-white dark:bg-gray-800 shadow-md"
+          : "bg-white dark:bg-transparent"
       }`}
     >
       <div className="flex items-center ">
