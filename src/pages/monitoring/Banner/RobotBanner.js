@@ -61,7 +61,7 @@ const BannerWithFadingGridBackground = () => {
         }`}
       >
         <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-10">
-          <span className="bg-white border-2 p-2 rounded-lg">
+          <span className="bg-white dark:bg-gray-700 border-2 dark:border-gray-500 p-2 rounded-lg">
             Robot Monitoring
           </span>
         </p>

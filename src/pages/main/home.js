@@ -16,7 +16,7 @@ function home() {
       <Proccess />
       <Feature />
        <WhyUs />
-       <Video />
+       {/* <Video /> */}
       <TrustUs />
       <Offering />
      <Faq />

@@ -1,23 +1,26 @@
-import { MoonOutlined, SunOutlined } from '@ant-design/icons';
-import React, { useEffect, useState } from 'react';
+import { MoonOutlined, SunOutlined } from "@ant-design/icons";
+import React, { useEffect, useState } from "react";
 
 const ThemeToggle = ({ onThemeChange }) => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  // Default to 'dark' if there is no theme in localStorage
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
-    localStorage.setItem('theme', theme);
+    localStorage.setItem("theme", theme); // Save the theme in localStorage
+
+    // Notify parent component of the theme change, if any
     if (onThemeChange) {
-      onThemeChange(theme); // Notify parent component of theme change
+      onThemeChange(theme);
     }
   }, [theme, onThemeChange]);
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -25,7 +28,11 @@ const ThemeToggle = ({ onThemeChange }) => {
       onClick={toggleTheme}
       className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-black dark:text-white transition duration-500"
     >
-      {theme === 'dark' ? <SunOutlined style={{ fontSize: '16px' }} /> : <MoonOutlined style={{ fontSize: '16px' }}/>}
+      {theme === "dark" ? (
+        <SunOutlined style={{ fontSize: "16px" }} />
+      ) : (
+        <MoonOutlined style={{ fontSize: "16px" }} />
+      )}
     </button>
   );
 };

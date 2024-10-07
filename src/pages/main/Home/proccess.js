@@ -131,14 +131,14 @@ function ProcessSection() {
   return (
     <div
       ref={sectionRef}
-      className={`mx-8 flex md:flex-row sm:flex-col xs:flex-col mt-20 sm:mt-10 xs:mt-10 mb-20 bg-gray-100 dark:bg-gray-900 p-10 rounded-lg transform transition-transform duration-700 ${
+      className={`mx-8 xs:mx-4 flex md:flex-row sm:flex-col lg:mt-10 lg:mb-10 xs:flex-col sm:mt-10 xs:mt-0 bg-gray-100 dark:bg-gray-900 p-10 rounded-lg transform transition-transform duration-700 ${
         isZoomedIn ? "scale-100" : "scale-90 opacity-50"
       }`} // Apply zoom in/out and opacity based on scroll
     >
       <div className="absolute bottom-30 left-30 w-64 h-64 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       <div className="flex flex-col items-start justify-center gap-10">
         <div className="">
-          <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white">
+          <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-900 dark:text-white">
             Digitize Your <span className="text-orange-500">Processes</span> And
             Gain Analytics From Day One
           </h2>

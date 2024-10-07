@@ -31,7 +31,7 @@ const BannerWithFadingGridBackground = () => {
   });
 
   return (
-    <div className="relative min-h-screen flex md:flex-col gap-20 sm:flex-col xs:flex-col justify-center items-center text-start p-8 bg-gray-100">
+    <div className="relative h-auto md:mt-10 md:mb-10 flex md:flex-col gap-20 sm:flex-col xs:flex-col justify-center items-center text-center p-8 bg-gray-900">
       {/* Banner Content */}
       <div
         ref={textRef}
@@ -42,26 +42,16 @@ const BannerWithFadingGridBackground = () => {
         }`}
       >
         <h1 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-          Advantages of CNC & Line Monitoring
+          Advantages
         </h1>
-        <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-5">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
       </div>
-      <div className="flex md:flex-row sm:flex-col xs:flex-col gap-10 max-w-6xl text-start">
+      <div className="flex md:flex-row sm:flex-col xs:flex-col gap-10 w-full text-center">
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-10 w-full">
           <b>
             <CheckCircleOutlined className="animate-bounce" style={{ fontSize: "24px", color: "green" }} />{" "}
             Improved Productivity
           </b>{" "}
           <br />{" "}
-          <span className="text-gray-500 text-lg">
-            {" "}
-            Maximize Machine uptime & improve OEE, OLE through historical data
-            access.
-          </span>
         </p>
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -69,10 +59,6 @@ const BannerWithFadingGridBackground = () => {
             Downtime Reduction
           </b>{" "}
           <br />{" "}
-          <span className="text-gray-500 text-lg">
-            {" "}
-            Minimize production downtime through anomaly detection & historical failure data
-          </span>
         </p>{" "}
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -80,10 +66,6 @@ const BannerWithFadingGridBackground = () => {
             Enhanced Quality
           </b>{" "}
           <br />{" "}
-          <span className="text-gray-500 text-lg">
-            {" "}
-            Maintain Consistent production quality by tracking tool parameters & operator performance through historical data.
-          </span>
         </p>
       </div>
     </div>

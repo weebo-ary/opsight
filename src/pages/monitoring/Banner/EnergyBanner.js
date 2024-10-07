@@ -61,7 +61,7 @@ const BannerWithFadingGridBackground = () => {
         }`}
       >
         <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-10">
-        <span className="bg-white border-2 p-2 rounded-lg">Energy Monitoring</span>
+        <span className="bg-white dark:bg-gray-700 border-2 dark:border-gray-500 p-2 rounded-lg">Energy Monitoring</span>
         </p>
         <h1 className="text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-20">
         Optimize Energy Usage through Real-Time energy Monitoring

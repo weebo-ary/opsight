@@ -66,7 +66,7 @@ const Navbar = () => {
               <img
                 src={theme === "dark" ? DarkLogo : LightLogo} // Switch logos based on theme
                 alt={theme === "dark" ? "DarkLogo" : "LightLogo"}
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </NavLink>
           </div>
@@ -79,8 +79,8 @@ const Navbar = () => {
             end
             className={({ isActive }) =>
               isActive
-                ? "relative text-sm font-medium p-1 text-gray-900 dark:text-white marker-underline active"
-                : "relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-600 dark:hover:text-indigo-400"
+                ? "relative text-md font-medium p-1 text-gray-900 dark:text-white marker-underline active"
+                : "relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-600 dark:hover:text-indigo-400"
             }
           >
             <HomeOutlined /> Home
@@ -89,14 +89,14 @@ const Navbar = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? "relative text-sm font-medium p-1 text-gray-900 dark:text-white marker-underline active"
-                : "relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
+                ? "relative text-md font-medium p-1 text-gray-900 dark:text-white marker-underline active"
+                : "relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
             }
           >
             <ExclamationCircleOutlined /> About Us
           </NavLink>
           <div
-            className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownProduct(true)}
             onMouseLeave={() => setDropdownProduct(false)}
           >
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
@@ -115,7 +115,7 @@ const Navbar = () => {
             {dropdownOpen && <DropdownMenu />}
           </div>
           <div
-            className="relative text-sm font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownServices(true)}
             onMouseLeave={() => setDropdownServices(false)}
           >
@@ -127,8 +127,8 @@ const Navbar = () => {
             to="/contact-us"
             className={({ isActive }) =>
               isActive
-                ? "relative text-sm p-1 font-medium text-gray-900 dark:text-white marker-underline active"
-                : "relative text-sm p-1 font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
+                ? "relative text-md p-1 font-medium text-gray-900 dark:text-white marker-underline active"
+                : "relative text-md p-1 font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
             }
           >
             <PhoneOutlined /> Contact

@@ -19,12 +19,7 @@ const AboutUs = () => {
             OPSIGHT AI
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-center">
-            Opsight AI Pvt Ltd is a Manufacturing Analytics (Industrial-AI,
-            SAAS) Startup. Manufacturing generates the largest volume of data
-            amongst all sectors, which often remains siloed in shop floors &
-            seldom used. At Opsight AI, we seek to revolutionize the way
-            manufacturing companies use data to make smarter decisions, optimize
-            operations & improve their overall efficiency.
+          Opsight AI Pvt Ltd is an Industrial-AIoT, SaaS Startup revolutionizing the way manufacturing companies harness data. At OpsightAI, we enable manufacturers to make smarter decisions, optimize operations & unlock their full manufacturing potential through intelligent data analytics.
           </p>
         </div>
       </section>
@@ -41,11 +36,7 @@ const AboutUs = () => {
                   Our Vision
                 </h2>
                 <p className="text-2xl text-gray-700 dark:text-gray-300">
-                  Developing affordable indigenous solutions for Indian
-                  manufacturers in critical emerging technologies like IIOT, Big
-                  Data Analytics, AI/ML, enabling them to produce
-                  globally-competitive goods within India and shift towards
-                  data-driven operations.
+                Enabling Indian manufacturers to achieve operational excellence & shift towards data-driven operations.
                 </p>
               </div>
             </div>
@@ -58,10 +49,7 @@ const AboutUs = () => {
                   Our Mission
                 </h2>
                 <p className="text-2xl text-gray-700 dark:text-gray-300">
-                  To empower manufacturers to leverage the power of AI and
-                  machine learning by delivering Real-time Production Insights &
-                  Predictive Analytics for optimizing their Productivity,
-                  Equipment Downtime & Rework Costs.
+                Empowering manufacturers to leverage IIoT & AI/ML to make informed decisions through predictive insights & address their biggest operational concerns: **Equipment Downtime & Rework Costs.**
                 </p>
               </div>
             </div>
@@ -121,12 +109,6 @@ const AboutUs = () => {
               <div className="mt-4 flex justify-center space-x-6">
               <LinkedinOutlined /> <MailOutlined />
               </div>
-              <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
-                Pulak is an experienced professional with more than 11 years of
-                cross-functional experience in the manufacturing industry. His
-                passion towards Industry 4.0 & Manufacturing Analytics propelled
-                him to pursue entrepreneurship in this domain.
-              </p>
              
             </div>
 
@@ -143,12 +125,6 @@ const AboutUs = () => {
               <div className="mt-4 flex justify-center space-x-6">
               <LinkedinOutlined /> <MailOutlined />
               </div>
-              <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
-                Arun is an experienced professional with more than 9 years of
-                cross-functional experience in Industrial Automation & IIoT. He
-                has worked extensively in smart manufacturing and is currently
-                building his Industry 4.0 startup – Opsight AI Pvt Ltd.
-              </p>
               
             </div>
           </div>

@@ -60,8 +60,8 @@ const BannerWithFadingGridBackground = () => {
             : "opacity-0 -translate-x-20"
         }`}
       >
-        <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-20 ">
-          <span className="bg-white border-2 p-2 rounded-lg">CNC & Line Monitoring</span>
+        <p className="text-base md:text-lg text-gray-500 dark:text-gray-100 mb-20 ">
+          <span className="bg-white dark:bg-gray-700 border-2 dark:border-gray-500 p-2 rounded-lg">CNC & Line Monitoring</span>
         </p>
         <h1 className="text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-10">
           Improve your shop-floor productivity through real-time CNC & Assembly

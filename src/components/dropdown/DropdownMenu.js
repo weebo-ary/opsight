@@ -50,16 +50,6 @@ const DropdownMenu = () => {
       </div>
 
       <div className="md:w-128 sm:w-72 md:pl-5">
-        <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-4">
-          Customer Stories
-        </h3>
-        <p className="text-gray-400 text-xs dark:text-gray-300 mb-4">
-          Explore how Opsight AI is utilized by our customers.
-        </p>
-        <p className="text-gray-400 text-xs dark:text-gray-300 mb-4">
-          Customer Ratings : <StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarFilled style={{color:"gold"}}/><StarOutlined />
-        </p>
-        <div className="border-b mb-3"> </div>
         <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-0 xs:hidden md:flex">
           <KeyOutlined style={{marginRight:"4px", fontSize:"16px"}}/> Key Features
         </h3>

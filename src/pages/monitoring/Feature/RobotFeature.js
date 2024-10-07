@@ -89,10 +89,10 @@ function Solution() {
               alt={card.title}
               className="w-96 rounded-xl md:mb-10"
             />
-            <h2 className="text-2xl font-semibold text-start mb-4">
+            <h2 className="text-2xl font-semibold text-center mb-4">
               {card.title}
             </h2>
-            <h2 className="text-xl text-gray-500 dark:text-gray-300 text-start md:mb-5">
+            <h2 className="text-lg   text-gray-500 dark:text-gray-300 text-center md:mb-5">
               {card.description}
             </h2>
           </div>

@@ -8,8 +8,8 @@ function EnergyMonitoring() {
   return (
     <div>
         <RobotBanner />
-        <RobAdv />
         <RobotFeatures />
+        <RobAdv />
         <Connect />
     </div>
   )

@@ -9,8 +9,8 @@ function EnergyMonitoring() {
   return (
     <div>
         <EngBanner />
-        <EngAdv />
         <EngFeatures />
+        <EngAdv />
         <Connect />
     </div>
   )

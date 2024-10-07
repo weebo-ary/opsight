@@ -14,6 +14,8 @@ module.exports = {
           '180': '54rem', 
           '200': '62rem', 
           '220': '70rem', 
+          '240': '85rem', 
+          '250': '100rem', 
           
         },
         height: {
@@ -37,7 +39,7 @@ module.exports = {
           // => @media (min-width: 1280px) { Desk }
         },
         animation: {
-          slideUp: 'slideUp 1s ease-out backwards',
+          slideUp: 'slideUp 1s ease-out forwards',
           marquee: 'marquee 20s linear infinite',
         },
         keyframes: {

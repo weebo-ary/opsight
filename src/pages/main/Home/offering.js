@@ -1,5 +1,7 @@
 import { CheckCircleOutlined, WarningOutlined } from "@ant-design/icons";
 import React, { useEffect, useState, useRef } from "react";
+import Logo from "../../../assets/Logo/DarkLogo.png";
+import OfferingBg from "../../../assets/Images/offering.png"; // Import the background image
 
 const OfferingSection = () => {
   const blobsData = [
@@ -134,111 +136,98 @@ const OfferingSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="dark:bg-gray-800 relative overflow-hidden mb-20 md:mb-20 md:mt-20"
+      className="relative overflow-hidden mb-20 md:mb-20 md:mt-20"
     >
-      <div className="mx-auto relative z-10 flex flex-col md:flex-row sm:flex-col xs:flex-col items-center justify-center">
-        <h2
-          className={`ml-8 text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white transition-all duration-1000 ease-in-out ${
-            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-          }`}
-        >
-          Work Smarter with a Smart Platform
-        </h2>
+      {/* Background Image */}
+      <img
+        src={OfferingBg}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-20"
+      />
 
-        {/* Blob grid */}
+      <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-col xs:flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-8">
           <div
             className={`flex flex-col items-center justify-center transition-all duration-1000 ease-in-out ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-20"
             }`}
           >
             <div
-              className="relative w-full md:w-160 h-auto p-6 bg-gradient-to-r bg-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-gray-800 dark:to-transparent rounded-sm text-center overflow-hidden cursor-pointer"
+              className="flex flex-row-reverse items-center justify-between relative p-6 rounded-sm text-center overflow-hidden cursor-pointer"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`bg-red-100 px-4 py-3 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-row-reverse items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
-                  isTransitioning
-                    ? "translate-x-full opacity-0"
-                    : "translate-x-0 opacity-100"
-                }`}
+                className={`w-full h-80 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 `}
               >
-                <div className="flex flex-row-reverse items-center justify-end gap-5 mb-5">
-                  <div className="text-5xl text-black">
-                    {blobsData[currentIndex].icon}
+                <h1 className="sticky top-0 z-50 text-5xl text-center w-full mb-10 text-green-400">
+                  {" "}
+                  Our Offerings{" "}
+                </h1>
+                <div
+                  className={`flex flex-col items-center justify-center gap-5 mb-5 transition-all duration-500 ease-in-out transform ${
+                    isTransitioning
+                      ? "translate-x-100% opacity-0"
+                      : "translate-x-0 opacity-100"
+                  }`}
+                >
+                  <div className="text-5xl text-white">
+                    {blobsDataTwo[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-end font-bold text-gray-800">
-                      {blobsData[currentIndex].title}
+                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-center font-bold text-white">
+                      {blobsDataTwo[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-xl xs:text-lg text-end text-gray-600">
-                      {blobsData[currentIndex].description}
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
+                      {blobsDataTwo[currentIndex].description}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-14"></div>
+              <div className="w-auto h-auto py-5 overflow-hidden flex flex-col items-center justify-center">
+                <div className="border-t-2 w-full rotate-90 mt-20"></div>
+                <div className="bg-black z-50 py-5 rounded-lg">
+                  <img
+                    src={Logo}
+                    alt="logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="border-t-2 w-full rotate-90 mb-20"></div>
+              </div>
 
               <div
-                className={`bg-green-100 px-4 py-4 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-row items-center justify-center gap-5 transition-all duration-500 ease-in-out transform ${
-                  isTransitioning
-                    ? "translate-x-[-100%] opacity-0"
-                    : "translate-x-0 opacity-100"
-                }`}
+                className={`w-full h-80 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 `}
               >
-                <div className="flex flex-row items-center justify-end gap-5 mb-5">
-                  <div className="text-5xl text-black">
-                    {blobsDataTwo[currentIndex].icon}
+                <h1 className="text-5xl text-center w-full text-red-400 mb-10">
+                  {" "}
+                  Industry Challenges{" "}
+                </h1>
+                <div
+                  className={`flex flex-col items-center justify-center gap-5 mb-5 transition-all duration-500 ease-in-out transform ${
+                    isTransitioning
+                      ? "translate-x-100% opacity-0"
+                      : "translate-x-0 opacity-100"
+                  }`}
+                >
+                  <div className="text-5xl text-white">
+                    {blobsData[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-start font-bold text-gray-800">
-                      {blobsDataTwo[currentIndex].title}
+                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-center font-bold text-white">
+                      {blobsData[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-xl xs:text-lg text-start text-gray-600">
-                      {blobsDataTwo[currentIndex].description}
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
+                      {blobsData[currentIndex].description}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Decorative Animated Elements (behind the cards) */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Small Dots Cluster */}
-        <div className="absolute bottom-82 left-80 blur-sm">
-          <svg width="150" height="100">
-            {Array.from({ length: 8 }).map((_, rowIndex) =>
-              Array.from({ length: 4 }).map((_, colIndex) => (
-                <circle
-                  key={`${rowIndex}-${colIndex}`}
-                  cx={20 * colIndex + 10}
-                  cy={20 * rowIndex + 10}
-                  r="3"
-                  fill="#9FD2C7"
-                />
-              ))
-            )}
-          </svg>
-        </div>
-
-        {/* More circles for background effect */}
-        <div className="absolute bottom-32 left-10 animate-float blur-sm">
-          <svg width="60" height="60">
-            <circle cx="30" cy="30" r="20" fill="#FF9AA2" />
-            <circle cx="50" cy="50" r="10" fill="#9FD2C7" />
-          </svg>
-        </div>
-
-        <div className="absolute top-10 right-20 blur-sm">
-          <svg width="50" height="50">
-            <circle cx="25" cy="25" r="15" fill="#FFD700" />
-            <circle cx="35" cy="15" r="7" fill="#A0CED9" />
-          </svg>
         </div>
       </div>
     </div>

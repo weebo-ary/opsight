@@ -51,7 +51,7 @@ function Solution() {
   ];
 
   return (
-    <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
+    <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-center p-8 ">
       <div className="text-center md:text-center sm:text-start xs:text-start mb-10">
         <h2 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl p-8">
           Our{" "}
@@ -89,10 +89,10 @@ function Solution() {
               alt={card.title}
               className="w-96 h-44 rounded-xl md:mb-10"
             />
-            <h2 className="text-2xl font-semibold text-start mb-4">
+            <h2 className="text-2xl font-semibold text-center mb-4">
               {card.title}
             </h2>
-            <h2 className="text-xl text-gray-500 dark:text-gray-300 text-start md:mb-5">
+            <h2 className="text-lg text-gray-500 dark:text-gray-300 text-center md:mb-5">
               {card.description}
             </h2>
           </div>

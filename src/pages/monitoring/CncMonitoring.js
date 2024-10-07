@@ -8,9 +8,8 @@ function CncMonitoring() {
   return (
     <div>
         <CncBanner />
-        <CncAdv />
-
         <CncFeatures />
+        <CncAdv />
         <Connect />
     </div>
   )

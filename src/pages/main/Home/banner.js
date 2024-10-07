@@ -1,7 +1,8 @@
-import IllustrationLight from "../../../assets/Illustration/banner-img.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
 import TypographyEffect from "../../../components/utils/TypographyEffect";
+import IllustrationLight from "../../../assets/Illustration/Banner-final.png";
+import VideoBanner from "../../../assets/Video/Banner.mp4";
 
 function Banner() {
   const [isLeftVisible, setIsLeftVisible] = useState(false);
@@ -37,22 +38,32 @@ function Banner() {
   }, []);
 
   return (
-    <div className="relative mx-2 lg:mx-2 md:mx-4 sm:mx-0 xs:mx-0 h-100 lg:mb-10 lg:mt-10 lg:h-auto md:h-auto sm:h-auto xs:h-auto mb-5 flex flex-row md:flex-row sm:flex-col xs:flex-col-reverse items-center justify-center overflow-hidden p-5 md:gap-2">
+    <div className="mx-0 lg:mx-0 md:mx-0 sm:mx-0 xs:mx-0 lg:mb-0 lg:mt-20 xs:mt-10 lg:min-h-screen md:h-min-h-screen sm:min-h-screen xs:min-h-screen flex flex-row md:flex-row items-start justify-start sm:flex-col xs:flex-col overflow-hidden p-5 md:gap-10">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full min-h-screen object-cover opacity-80 dark:opacity-40 z-0"
+      >
+        <source src={VideoBanner} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* Left Section */}
       <div
         ref={leftSectionRef}
-        className={`relative z-10 transition-all duration-1000 ease-out transform ${
-          isLeftVisible
-            ? "opacity-100 translate-x-0"
-            : "opacity-0 -translate-x-20"
+        className={`  relative z-10 transition-all duration-1000 ease-out transform ${
+          isLeftVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
         }`}
       >
-        <div>
-          <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-700 dark:text-white mb-6">
+        <div >
+          <h1 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-white mb-6">
             OPSIGHT AI
           </h1>
 
-          <h1 className="relative text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-gray-900 dark:text-white mb-6 inline-block">
+          <h1 className="relative text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-extrabold text-white mb-6 inline-block">
             Transforming Operations Data Into Actionable{" "}
             <span
               className="relative inline-block"
@@ -71,16 +82,16 @@ function Banner() {
         </div>
 
         <div>
-          <p className="text-4xl md:text-4xl sm:text-xl xs:text-xl text-gray-700 dark:text-gray-400 mb-6">
+          <p className="text-4xl md:text-4xl sm:text-xl xs:text-xl text-gray-200 mb-6">
             Enabling companies to unlock their untapped manufacturing potential
             & achieve operational excellence through AI.
           </p>
         </div>
         <div className="flex space-x-4">
-          <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
+          <button className="px-6 py-3 bg-white text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
             Get started
           </button>
-          <button className="px-6 py-3 text-slate-600 dark:text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
+          <button className="px-6 py-3 text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
             Learn more <ArrowRightOutlined className="ml-2" />
           </button>
         </div>
@@ -89,7 +100,7 @@ function Banner() {
       {/* Right Section */}
       <div
         ref={rightSectionRef}
-        className={`relative z-10 transition-all duration-1000 ease-out transform ${
+        className={` relative z-10 transition-all duration-1000 ease-out transform ${
           isRightVisible
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-20"
@@ -98,7 +109,7 @@ function Banner() {
         <img
           src={IllustrationLight}
           alt="Mockup"
-          className="w-220 lg:w-220 md:w-220 sm:w-200 xs:w-full pr-2 xs:pr-0 xs-w-full sm:mt-10 xs:mb-10 rounded-3xl lg:rounded-3xl md:rounded-t-[60px] md:rounded-b-[20px] sm:rounded-none xs:rounded-none"
+          className="lg:flex md:flex xs:hidden w-200 lg:w-250 md:w-250 sm:w-200 xs:w-full pr-2 xs:pr-0 xs-w-full sm:mt-10 xs:mb-10 rounded-3xl lg:rounded-3xl md:rounded-t-[60px] md:rounded-b-[20px] sm:rounded-none xs:rounded-none"
         />
       </div>
     </div>
