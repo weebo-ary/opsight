@@ -142,7 +142,7 @@ const OfferingSection = () => {
       <img
         src={OfferingBg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-20"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 dark:opacity-20"
       />
 
       <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-col xs:flex-col items-center justify-center">
@@ -173,14 +173,14 @@ const OfferingSection = () => {
                       : "translate-x-0 opacity-100"
                   }`}
                 >
-                  <div className="text-5xl text-white">
+                  <div className="text-5xl text-black dark:text-white">
                     {blobsDataTwo[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-center font-bold text-white">
+                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-center font-bold text-black dark:text-white">
                       {blobsDataTwo[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-900 dark:text-gray-100">
                       {blobsDataTwo[currentIndex].description}
                     </p>
                   </div>
@@ -213,14 +213,14 @@ const OfferingSection = () => {
                       : "translate-x-0 opacity-100"
                   }`}
                 >
-                  <div className="text-5xl text-white">
+                  <div className="text-5xl text-black dark:text-white">
                     {blobsData[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-center font-bold text-white">
+                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-center font-bold text-black dark:text-white">
                       {blobsData[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-500 dark:text-gray-100">
                       {blobsData[currentIndex].description}
                     </p>
                   </div>
