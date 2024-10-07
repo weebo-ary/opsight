@@ -31,7 +31,7 @@ const ThemeToggle = ({ onThemeChange }) => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-white transition duration-500"
+      className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-black dark:text-white transition duration-500"
     >
       {theme === "dark" ? (
         <SunOutlined style={{ fontSize: "24px" }} />

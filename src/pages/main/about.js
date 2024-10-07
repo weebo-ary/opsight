@@ -12,14 +12,14 @@ import Banner from "../../assets/Illustration/about-banner.jpg"
 const AboutUs = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+      
       {/* First Section: Introduction */}
       <section className="h-auto relative py-16 bg-gradient-to-r from-white via-gray-100 to-white dark:from-gray-800 dark:via-gray-800 dark:to-gray-800">
       <img
         src={Banner}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 dark:opacity-20"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-50 dark:opacity-20"
       />
-        <div className="absolute inset-0 bg-opacity-30"></div>
         <div className="mx-auto px-6 lg:px-8 relative z-10">
           <h1 className="text-center text-6xl font-extrabold text-gray-900 dark:text-white mb-6">
             OPSIGHT AI
