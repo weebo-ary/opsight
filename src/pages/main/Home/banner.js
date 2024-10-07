@@ -1,7 +1,7 @@
 import { ArrowRightOutlined } from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
 import TypographyEffect from "../../../components/utils/TypographyEffect";
-import IllustrationLight from "../../../assets/Illustration/Banner-final.png";
+import IllustrationLight from "../../../assets/Illustration/banner-home.jpg";
 import VideoBanner from "../../../assets/Video/Banner.mp4";
 
 function Banner() {

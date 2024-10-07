@@ -8,7 +8,7 @@ import {
   DatabaseOutlined,
   RightOutlined,
 } from "@ant-design/icons";
-import FeatureImage from "../../../assets/Illustration/solution-img.png";
+import FeatureImage from "../../../assets/Illustration/solutions-final.jpg";
 import { Link } from "react-router-dom";
 
 function SolutionSection() {
