@@ -56,7 +56,7 @@ const Navbar = () => {
       className={`sticky top-0 z-50  p-4 flex justify-between items-center  transition duration-500 ${
         isScrolled
           ? "bg-white dark:bg-gray-800 shadow-md"
-          : "bg-white dark:bg-transparent"
+          : "bg-transparent dark:bg-transparent"
       }`}
     >
       <div className="flex items-center ">
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="mr-6">
             <NavLink to="/">
               <img
-                src={theme === "dark" ? DarkLogo : LightLogo} // Switch logos based on theme
+                src={DarkLogo} // Switch logos based on theme
                 alt={theme === "dark" ? "DarkLogo" : "LightLogo"}
                 className="h-14 w-auto"
               />
@@ -79,7 +79,7 @@ const Navbar = () => {
             end
             className={({ isActive }) =>
               isActive
-                ? "relative text-md font-medium p-1 text-gray-900 dark:text-white marker-underline active"
+                ? "relative text-md font-medium p-1 text-white marker-underline active"
                 : "relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-600 dark:hover:text-indigo-400"
             }
           >
@@ -90,13 +90,13 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive
                 ? "relative text-md font-medium p-1 text-gray-900 dark:text-white marker-underline active"
-                : "relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
+                : "relative text-md font-medium p-1 text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
             }
           >
             <ExclamationCircleOutlined /> About Us
           </NavLink>
           <div
-            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownProduct(true)}
             onMouseLeave={() => setDropdownProduct(false)}
           >
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
@@ -115,7 +115,7 @@ const Navbar = () => {
             {dropdownOpen && <DropdownMenu />}
           </div>
           <div
-            className="relative text-md font-medium p-1 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
+            className="relative text-md font-medium p-1 text-gray-300 hover:text-gray-500 dark:hover:text-indigo-400"
             onMouseEnter={() => setDropdownServices(true)}
             onMouseLeave={() => setDropdownServices(false)}
           >
@@ -128,7 +128,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive
                 ? "relative text-md p-1 font-medium text-gray-900 dark:text-white marker-underline active"
-                : "relative text-md p-1 font-medium text-gray-700 dark:text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
+                : "relative text-md p-1 font-medium text-gray-300 marker-underline hover:text-gray-500 dark:hover:text-indigo-400"
             }
           >
             <PhoneOutlined /> Contact

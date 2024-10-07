@@ -11,7 +11,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const [theme] = useState(localStorage.getItem("theme") || "light");
+  const [theme] = useState(localStorage.getItem("theme") || "dark");
 
   // Apply the theme to the loading screen only
   useEffect(() => {

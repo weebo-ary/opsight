@@ -45,7 +45,7 @@ function Banner() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full min-h-screen object-cover opacity-80 dark:opacity-40 z-0"
+        className="absolute inset-0 w-full min-h-screen object-cover opacity-90 dark:opacity-40 z-0"
       >
         <source src={VideoBanner} type="video/mp4" />
         Your browser does not support the video tag.

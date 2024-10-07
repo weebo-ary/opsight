@@ -3,7 +3,12 @@ import React, { useEffect, useState } from "react";
 
 const ThemeToggle = ({ onThemeChange }) => {
   // Default to 'dark' if there is no theme in localStorage
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const getInitialTheme = () => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "dark";
+  };
+
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -11,7 +16,7 @@ const ThemeToggle = ({ onThemeChange }) => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    localStorage.setItem("theme", theme); // Save the theme in localStorage
+    // localStorage.setItem("theme", theme); // Save the theme in localStorage
 
     // Notify parent component of the theme change, if any
     if (onThemeChange) {
@@ -26,7 +31,7 @@ const ThemeToggle = ({ onThemeChange }) => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-black dark:text-white transition duration-500"
+      className="p-2 rounded-md bg-transparent hover:text-gray-500 dark:hover:text-gray-300 text-white transition duration-500"
     >
       {theme === "dark" ? (
         <SunOutlined style={{ fontSize: "16px" }} />
