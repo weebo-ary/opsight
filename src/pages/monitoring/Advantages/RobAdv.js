@@ -29,7 +29,7 @@ const BannerWithFadingGridBackground = () => {
   });
 
   return (
-    <div className="relative h-auto md:mt-10 md:mb-10 flex md:flex-col gap-20 sm:flex-col xs:flex-col justify-center items-center text-center p-8 bg-gray-900">
+    <div className="relative h-auto md:mt-10 md:mb-10 flex md:flex-col gap-20 sm:flex-col xs:flex-col justify-center items-center text-center p-8 -gray-100 dark:bg-gray-900">
       {/* Banner Content */}
       <div
         ref={textRef}
