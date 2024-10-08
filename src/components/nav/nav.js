@@ -66,7 +66,7 @@ const Navbar = () => {
               <img
                 src={theme === "dark" ? DarkLogo : LightLogo} // Switch logos based on theme
                 alt={theme === "dark" ? "DarkLogo" : "LightLogo"}
-                className="h-14 w-auto"
+                className="h-14 sm:h-10 xs:h-10 w-auto"
               />
             </NavLink>
           </div>

@@ -9,9 +9,9 @@ import {
 const Footer = () => {
   return (
     <footer className="overflow-hidden bg-gray-100 mt-0 dark:bg-gray-900 text-black  dark:text-white py-10 transition-colors duration-500">
-      <div className="flex md:flex md:items-center md:justify-between xs:grid sm:grid sm:grid-cols-2 xs:grid-cols-2 px-12 gap-8">
+      <div className="flex md:flex md:items-center md:justify-between xs:grid sm:grid sm:grid-cols-1 xs:grid-cols-1 px-12 gap-8">
         {/* Column 1: Company Logo / Branding */}
-        <div className="space-y-4 md:w-1/4 xs:w-full sm:w-full border-r">
+        <div className="space-y-4 md:w-1/4 xs:w-full sm:w-full md:border-r xs:border-none sm:border-none">
           <h4 className="text-2xl font-bold text-gray-900 dark:text-white">
             Opsight AI
           </h4>

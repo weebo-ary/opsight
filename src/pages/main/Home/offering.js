@@ -145,7 +145,7 @@ const OfferingSection = () => {
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 dark:opacity-20"
       />
 
-      <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-col xs:flex-col items-center justify-center">
+      <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-row xs:flex-row items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-8">
           <div
             className={`flex flex-col items-center justify-center transition-all duration-1000 ease-in-out ${
@@ -155,12 +155,12 @@ const OfferingSection = () => {
             }`}
           >
             <div
-              className="flex flex-row-reverse items-center justify-between relative p-6 rounded-sm text-center overflow-hidden cursor-pointer"
+              className="flex md:flex-row-reverse xs:flex-col-reverse items-center justify-between relative p-6 rounded-sm text-center overflow-hidden cursor-pointer "
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`w-full h-80 rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 `}
+                className={`w-full h-80 xs:h-auto sm:h-auto rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5  `}
               >
                 <h1 className="sticky top-0 z-50 text-5xl text-center w-full mb-10 text-green-400">
                   {" "}
@@ -187,20 +187,20 @@ const OfferingSection = () => {
                 </div>
               </div>
 
-              <div className="w-auto h-auto py-5 overflow-hidden flex flex-col items-center justify-center">
-                <div className="border-t-2 w-full rotate-90 mt-20"></div>
+              <div className="w-auto h-auto md:py-5 overflow-hidden flex flex-col items-center justify-center xs:mt-5 sm:mt-5 xs:mb-5 sm:mb-5">
+                <div className="border-t-2 w-full rotate-90 mt-20 sm:hidden xs:hidden"></div>
                 <div className="bg-black z-50 py-5 rounded-lg">
                   <img
                     src={Logo}
                     alt="logo"
-                    className="w-full h-full object-cover"
+                    className="md:w-full xs:w-64 md:h-full object-cover"
                   />
                 </div>
-                <div className="border-t-2 w-full rotate-90 mb-20"></div>
+                <div className="border-t-2 w-full rotate-90 mb-20 sm:hidden xs:hidden"></div>
               </div>
 
               <div
-                className={`w-full h-80 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 `}
+                className={`w-full h-80 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 sm:mb-10 xs:mb-10 `}
               >
                 <h1 className="text-5xl text-center w-full text-red-400 mb-10">
                   {" "}
