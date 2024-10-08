@@ -47,7 +47,7 @@ const WhyUs = () => {
               flow
             </span>
           </h2>
-          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2 ">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col md:items-center xs:items-start sm:items-start justify-center gap-3 mb-2 ">
             <span className="w-full">Immediate Insights</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
@@ -55,7 +55,7 @@ const WhyUs = () => {
               decision-making{" "}
             </span>
           </h2>
-          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col md:items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
             <span className="w-full">Flexible Deployment</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
@@ -63,7 +63,7 @@ const WhyUs = () => {
               options.
             </span>
           </h2>
-          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col md:items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
             <span className="w-full">No Data Loss</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
