@@ -1,6 +1,7 @@
 
 import { BarChartOutlined, CommentOutlined, ConsoleSqlOutlined, FireOutlined, WifiOutlined } from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
+import IiotBanner from "../../../assets/Illustration/iiot-banner.jpg"
 
 function About() {
   const cardsRef = useRef([]);
@@ -75,6 +76,11 @@ function About() {
 
   return (
     <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
+            <img
+        src={IiotBanner}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0 liopacity-30 opacity-30 dark:opacity-20"
+      />
       <div className="text-center md:text-center sm:text-start xs:text-start mb-10">
         <h2 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl p-8">
           Key Features of{" "}
@@ -100,7 +106,7 @@ function About() {
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             data-index={index}
-            className={`bg-grey-300 w-full shadow-lg dark:shadow-2xl h-auto p-8 rounded-lg transition-all duration-700 ease-in-out transform cursor-pointer hover:scale-105 ${
+            className={`bg-white dark:bg-gray-800 w-full shadow-lg dark:shadow-2xl h-auto p-8 rounded-lg transition-all duration-700 ease-in-out transform cursor-pointer hover:scale-105 ${
               isVisible[index]
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"

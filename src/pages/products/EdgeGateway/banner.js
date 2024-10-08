@@ -52,6 +52,7 @@ const BannerWithFadingGridBackground = () => {
         </div>
       </div>
 
+
       {/* Banner Content */}
       <div
         ref={textRef}

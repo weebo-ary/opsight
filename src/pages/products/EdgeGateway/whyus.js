@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircleFilled } from "@ant-design/icons";
+import IiotAdv from "../../../assets/Illustration/iiot-adv.jpg"
 
 const WhyUs = () => {
   const sectionRef = useRef(null);
@@ -73,8 +74,8 @@ const WhyUs = () => {
         </div>
       </div>
       <img
-        src="http://placehold.it/600x500"
-        className="mt-10 md:mt-0 md:ml-5"
+        src={IiotAdv}
+        className="w-1/2 mt-10 md:mt-0 md:ml-5 rounded-lg"
         alt="banner-img"
       />
     </div>

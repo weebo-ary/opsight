@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Im1 from "../../../assets/Illustration/brand-cnc.png";
 import Im2 from "../../../assets/Illustration/prod-cnc.png";
 import Im3 from "../../../assets/Illustration/condition-cnc.png";
+import Im4 from "../../../assets/Illustration/mon-feat.jpg"
+
 
 function Solution() {
   const cardsRef = useRef([]);
@@ -52,6 +54,11 @@ function Solution() {
 
   return (
     <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
+       <img
+        src={Im4}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0 liopacity-30 opacity-50 dark:opacity-20 "
+      />
       <div className="text-center md:text-center sm:text-start xs:text-start mb-10">
         <h2 className="text-6xl md:text-6xl sm:text-4xl xs:text-4xl p-8">
           Our{" "}
@@ -72,13 +79,13 @@ function Solution() {
           </p> */}
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 max-w-6xl gap-10">
+      <div className="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 max-w-6xl gap-10 mb-10">
         {cardsData.map((card, index) => (
           <div
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             data-index={index}
-            className={`bg-grey-300 w-full shadow-lg dark:shadow-2xl h-auto p-8 rounded-lg transition-all duration-700 ease-in-out transform cursor-pointer hover:scale-105 ${
+            className={`bg-white dark:bg-gray-800 w-full shadow-lg dark:shadow-2xl h-auto p-8 rounded-lg transition-all duration-700 ease-in-out transform cursor-pointer hover:scale-105 ${
               isVisible[index]
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"

@@ -1,6 +1,6 @@
 import React from "react";
-import AboutIllustration from "../../assets/Illustration/ourVision.png";
-import MissionIllustration from "../../assets/Illustration/MissionIllustration.png";
+import AboutIllustration from "../../assets/Illustration/ourVision.jpg";
+import MissionIllustration from "../../assets/Illustration/MissionIllustration.jpg";
 import PulakImage from "../../assets/Images/Pulak.png";
 import ArunImage from "../../assets/Images/Arun.png";
 import DevanshImage from "../../assets/Images/devansha.png";
@@ -35,10 +35,10 @@ const AboutUs = () => {
         <div className="mx-auto ">
           <div className=" grid grid-cols-1 md:grid-cols-1 gap-12">
             {/* Vision */}
-            <div className="text-start flex flex-row items-center gap-20 justify-center">
-              <img src={AboutIllustration} width={1000} alt="about-us"/>
+            <div className="text-start flex flex-row items-center gap-20 justify-center ml-10">
+              <img src={AboutIllustration} width={500} alt="about-us" className="rounded-lg"/>
               <div className="w-full">
-                <h2 className="text-6xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
+                <h2 className="text-6xl font-bold text-black dark:text-white mb-4">
                   Our Vision
                 </h2>
                 <p className="text-3xl text-gray-700 dark:text-gray-300">
@@ -48,14 +48,14 @@ const AboutUs = () => {
             </div>
 
             {/* Mission */}
-            <div className="text-start flex flex-row-reverse items-center justify-center">
-              <img src={MissionIllustration} width={500} alt="mission" />
+            <div className="text-start flex flex-row-reverse items-center justify-center mr-10 gap-10">
+              <img src={MissionIllustration} width={500} alt="mission" className="rounded-xl"/>
               <div className="w-full ml-8">
-                <h2 className="text-6xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
+                <h2 className="text-6xl font-bold text-black dark:text-white mb-4">
                   Our Mission
                 </h2>
                 <p className="text-3xl text-gray-700 dark:text-gray-300">
-                Empowering manufacturers to leverage IIoT & AI/ML to make informed decisions through predictive insights & address their biggest operational concerns: **Equipment Downtime & Rework Costs.**
+                Empowering manufacturers to leverage IIoT & AI/ML to make informed decisions through predictive insights & address their biggest operational concerns: <b>Equipment Downtime & Rework Costs.</b>
                 </p>
               </div>
             </div>
@@ -171,6 +171,9 @@ const AboutUs = () => {
               <h3 className="text-center text-lg font-bold text-gray-600 dark:text-gray-200 mt-6">
                 Project Manager
               </h3>
+              <div className="mt-4 flex justify-center space-x-6">
+              <LinkedinOutlined /> <MailOutlined />
+              </div>
             </div>
 
             {/* Employee 2 */}
@@ -186,6 +189,9 @@ const AboutUs = () => {
               <h3 className="text-center text-lg font-bold text-gray-600 dark:text-gray-200 mt-6">
                 Embedded Systems Engineer
               </h3>
+              <div className="mt-4 flex justify-center space-x-6">
+              <LinkedinOutlined /> <MailOutlined />
+              </div>
             </div>
 
             {/* Employee 3 */}
@@ -201,6 +207,9 @@ const AboutUs = () => {
               <h3 className="text-center text-lg font-bold text-gray-600 dark:text-gray-200 mt-6">
                 ML Intern
               </h3>
+              <div className="mt-4 flex justify-center space-x-6">
+              <LinkedinOutlined /> <MailOutlined />
+              </div>
             </div>
           </div>
         </div>
