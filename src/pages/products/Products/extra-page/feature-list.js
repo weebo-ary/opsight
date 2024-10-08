@@ -49,8 +49,8 @@ const FeatureItem = ({ icon, title, description, isVisible }) => (
     }`}
   >
     <h2>{icon}</h2>
-    <h2 className="text-xl font-semibold border-b mb-2">{title}</h2>
-    <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>
+    <h2 className="md:text-xl sm:text-sm xs:text-sm font-semibold border-b md:mb-2 sm:mb-3 xs:mb-3">{title}</h2>
+    <p className="md:text-sm xs:text-xs sm:text-xs text-gray-600 dark:text-gray-300">{description}</p>
   </div>
 );
 
@@ -79,7 +79,7 @@ function FeatureList() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-20 p-8 max-w-6xl mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-20 p-8 lg:w-220">
       {features.map((feature, index) => (
         <div
           key={index}

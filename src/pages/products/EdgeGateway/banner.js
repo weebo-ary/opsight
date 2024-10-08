@@ -36,7 +36,7 @@ const BannerWithFadingGridBackground = () => {
       {/* Grid Background with Fading Effect */}
       <div className="absolute inset-0 flex justify-center items-center">
         <div
-          className="grid md:grid sm:hidden xs:hidden grid-cols-8 grid-rows-8 md:grid-cols-8 md:grid-rows-8 w-full h-full gap-0 opacity-10 dark:opacity-10"
+          className="grid md:grid grid-cols-8 grid-rows-8 md:grid-cols-8 md:grid-rows-8 sm:grid-cols-4 sm:grid-rows-4 xs:grid-cols-4 xs:grid-rows-4 w-full h-full gap-0 opacity-10 dark:opacity-10"
           style={{
             maskImage: "linear-gradient(to right, black 30%, transparent 70%)",
             WebkitMaskImage:
