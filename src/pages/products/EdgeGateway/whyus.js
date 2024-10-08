@@ -39,23 +39,23 @@ const WhyUs = () => {
         </h1>
 
         <div className="flex flex-col md:flex-col items-start justify-start gap-5 rounded-lg">
-          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col md:items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
             <span className="w-full">Enhanced Connectivity</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
               Integrate various industrial devices and sensors for seamless data
-              flow.
+              flow
             </span>
           </h2>
-          <h2 className="text-lg flex items-center justify-center gap-3 mb-2 ">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2 ">
             <span className="w-full">Immediate Insights</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
               Local processing allows for real-time analytics and faster
-              decision-making.{" "}
+              decision-making{" "}
             </span>
           </h2>
-          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
             <span className="w-full">Flexible Deployment</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
@@ -63,7 +63,7 @@ const WhyUs = () => {
               options.
             </span>
           </h2>
-          <h2 className="text-lg flex items-center justify-center gap-3 mb-2">
+          <h2 className="text-lg flex md:flex-row sm:flex-col xs:flex-col items-center xs:items-start sm:items-start justify-center gap-3 mb-2">
             <span className="w-full">No Data Loss</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
@@ -75,7 +75,7 @@ const WhyUs = () => {
       </div>
       <img
         src={IiotAdv}
-        className="w-1/2 mt-10 md:mt-0 md:ml-5 rounded-lg"
+        className="md:w-1/2 xs:w-full sm:w-full mt-10 md:mt-0 md:ml-5 rounded-lg"
         alt="banner-img"
       />
     </div>

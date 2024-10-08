@@ -109,7 +109,7 @@ function Banner() {
         <img
           src={IllustrationLight}
           alt="Mockup"
-          className="lg:flex md:flex xs:hidden w-200 lg:w-250 md:w-250 sm:w-200 xs:w-full pr-2 xs:pr-0 xs-w-full sm:mt-10 xs:mb-10 rounded-3xl lg:rounded-3xl md:rounded-t-[60px] md:rounded-b-[20px] sm:rounded-none xs:rounded-none"
+          className="lg:flex md:flex w-200 lg:w-250 md:w-250 sm:w-200 xs:w-full pr-2 xs:pr-0 xs-w-full sm:mt-10 xs:mt-10 xs:mb-5 rounded-3xl lg:rounded-3xl md:rounded-t-[60px] md:rounded-b-[20px] sm:rounded-lg xs:rounded-lg"
         />
       </div>
     </div>
