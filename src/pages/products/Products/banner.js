@@ -82,10 +82,7 @@ const BannerWithFadingGridBackground = () => {
           for your Factory Digitization
             </h1>
         <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-10">
-        Unlock the full potential of your manufacturing operations with our platform, which
-empowers you with real-time insights, advanced analytics, and seamless integration,
-turning your operations into smart devices.
-          aliqua.
+        Unlock the full potential of your industrial assets with OpsightAI's IIoT Gateway. Our gateway seamlessly connects your machines, sensors, and devices, providing a reliable and flexible platform for real-time data acquisition and processing.
         </p>
 
         {/* <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start md:justify-center space-y-4 md:space-y-0 md:space-x-4">
