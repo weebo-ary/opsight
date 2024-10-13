@@ -19,7 +19,6 @@ import Tr17 from "../../assets/Illustration/tr17.png";
 import Tr18 from "../../assets/Illustration/tr18.png";
 import Tr19 from "../../assets/Illustration/tr19.png";
 
-
 function TrainingIndustry40() {
   const sections = [
     {
@@ -69,7 +68,8 @@ function TrainingIndustry40() {
         },
         {
           image: Tr9, // Replace with your actual image import or URL
-          description: "Data Connectivity – Communication Protocols, Data types",
+          description:
+            "Data Connectivity – Communication Protocols, Data types",
         },
         {
           image: Tr10, // Replace with your actual image import or URL
@@ -98,7 +98,8 @@ function TrainingIndustry40() {
         },
         {
           image: Tr15, // Replace with your actual image import or URL
-          description: "Types of Algorithms: linear regression, decision trees, k-nearest neighbours, etc.",
+          description:
+            "Types of Algorithms: linear regression, decision trees, k-nearest neighbours, etc.",
         },
         {
           image: Tr16, // Replace with your actual image import or URL
@@ -106,11 +107,13 @@ function TrainingIndustry40() {
         },
         {
           image: Tr17, // Replace with your actual image import or URL
-          description: "Data Pre-processing – Collection and Cleaning, Handling values and outliers",
+          description:
+            "Data Pre-processing – Collection and Cleaning, Handling values and outliers",
         },
         {
           image: Tr18, // Replace with your actual image import or URL
-          description: "Model Development – Model Training and validation, overfitting vs under-fitting",
+          description:
+            "Model Development – Model Training and validation, overfitting vs under-fitting",
         },
         {
           image: Tr19, // Replace with your actual image import or URL
@@ -119,10 +122,20 @@ function TrainingIndustry40() {
       ],
     },
   ];
-  
 
   return (
     <div className="h-auto bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-4 transition">
+      <div className="h-auto bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-4 transition w-full">
+        <div className="relative overflow-hidden whitespace-nowrap w-full">
+          <div className="animate-marquee inline-block w-full">
+            <span className="text-lg font-bold mx-4">
+              🔥 New Upcoming Courses 🔥
+            </span>
+            <span className="text-lg font-bold mx-4">🚀 Launching Soon 🚀</span>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-6xl transition">
         <h1 className="text-6xl md:text-5xl xs:text-3xl text-start font-bold mb-20 text-gray-800 dark:text-gray-100">
           Training - Industry 4.0 Technologies
@@ -145,8 +158,14 @@ function TrainingIndustry40() {
                     key={index}
                     className="p-4 bg-white  flex flex-col items-center justify-center mt-10 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer dark:bg-gray-700 rounded-lg text-center shadow-lg"
                   >
-                    <img src={point.image} alt={point.title} className="w-64 border-b mb-10" />
-                    <p className="text-gray-700 dark:text-gray-300">{point.description}</p>
+                    <img
+                      src={point.image}
+                      alt={point.title}
+                      className="w-64 border-b mb-10"
+                    />
+                    <p className="text-gray-700 dark:text-gray-300">
+                      {point.description}
+                    </p>
                   </div>
                 ))}
               </div>

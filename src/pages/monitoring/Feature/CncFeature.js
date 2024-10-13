@@ -41,7 +41,7 @@ function Solution() {
       image: Im2,
       title: "Production Monitoring",
       description:
-        "Monitor critical production KPIs like Cycle Time, Asset Utilization, OEE, OLE etc.",
+        "Monitor critical production KPIs like Cycle Time, Asset Utilization, OEE, OLE and many more.",
     },
     {
       image: Im3,

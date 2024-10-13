@@ -88,7 +88,7 @@ turning your operations into smart devices.
           aliqua.
         </p>
 
-        <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start md:justify-center space-y-4 md:space-y-0 md:space-x-4">
+        {/* <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start md:justify-center space-y-4 md:space-y-0 md:space-x-4">
           <button className="bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
             Book Demo
           </button>
@@ -98,7 +98,7 @@ turning your operations into smart devices.
           >
             Learn more →
           </a>
-        </div>
+        </div> */}
       </div>
       <img
         ref={imageRef}

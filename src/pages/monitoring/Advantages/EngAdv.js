@@ -46,17 +46,31 @@ const BannerWithFadingGridBackground = () => {
       <div className="flex md:flex-row w-full sm:flex-col xs:flex-col gap-10 max-w-6xl text-center">
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-10 w-full">
           <b>
-            <CheckCircleOutlined className="animate-bounce" style={{ fontSize: "24px", color: "green" }} />{" "}
+            <CheckCircleOutlined
+              className="animate-bounce"
+              style={{ fontSize: "24px", color: "green" }}
+            />{" "}
             Reduce Energy Cost
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">
+            Minimize energy cost by analyzing energy usage of the critical
+            machines
+          </p>
         </p>
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
-            <CheckCircleOutlined className="animate-bounce" style={{ fontSize: "24px", color: "green" }} />{" "}
+            <CheckCircleOutlined
+              className="animate-bounce"
+              style={{ fontSize: "24px", color: "green" }}
+            />{" "}
             Increase Machine Performance
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">
+            Optimize machine performance by setting threshold values (Current,
+            Power factor, voltage) for machines
+          </p>
         </p>{" "}
       </div>
     </div>

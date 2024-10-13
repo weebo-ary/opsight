@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Im1 from "../../../assets/Illustration/brand-cnc.png";
 import Im2 from "../../../assets/Illustration/prod-cnc.png";
 import Im3 from "../../../assets/Illustration/condition-cnc.png";
-import Im4 from "../../../assets/Illustration/mon-feat.jpg"
-
+import Im4 from "../../../assets/Illustration/mon-feat.jpg";
 
 function Solution() {
   const cardsRef = useRef([]);
@@ -36,25 +35,25 @@ function Solution() {
       image: Im1,
       title: "Brand Agnostic",
       description:
-        " Supports integration with different Robot controllers through multiple protocols & their SDKs.",
+        "Supports integration with different Robot controllers through multiple protocols & their SDKs",
     },
     {
       image: Im2,
       title: "Production Monitoring",
       description:
-        " Monitor critical Robot KPIs like TCP Position, Robot Utilization, Cycle Time etc.",
+        "Monitor critical Robot KPIs like TCP Position, Robot Utilization, Cycle Time etc.",
     },
     {
       image: Im3,
       title: "Condition Monitoring",
       description:
-        "Monitor critical operational parameters like Joint Torque, Joint Speed, Joint Acceleration, Alarms etc.",
+        "Monitor critical operational parameters like Joint Torque, Joint Speed, Joint Acceleration, Alarms etc",
     },
   ];
 
   return (
     <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
-       <img
+      <img
         src={Im4}
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover z-0 liopacity-30 opacity-50 dark:opacity-20 "

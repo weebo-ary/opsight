@@ -86,7 +86,7 @@ const BannerWithFadingGridBackground = () => {
         Unlock the full potential of your industrial assets with OpsightAI's IIoT Gateway. Our gateway seamlessly connects your machines, sensors, and devices, providing a reliable and flexible platform for real-time data acquisition and processing.
         </p>
 
-        <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start space-y-4 md:space-y-0 md:space-x-4">
+        {/* <div className="flex flex-col md:flex-row sm:flex-row xs:flex-row justify-start space-y-4 md:space-y-0 md:space-x-4">
           <button className="bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
             Get started
           </button>
@@ -96,7 +96,7 @@ const BannerWithFadingGridBackground = () => {
           >
             Learn more →
           </a>
-        </div>
+        </div> */}
       </div>
       <img
         ref={imageRef}

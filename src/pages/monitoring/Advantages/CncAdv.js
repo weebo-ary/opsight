@@ -52,6 +52,7 @@ const BannerWithFadingGridBackground = () => {
             Improved Productivity
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Maximize Machine uptime & improve OEE, OLE through historical data access.</p>
         </p>
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -59,6 +60,7 @@ const BannerWithFadingGridBackground = () => {
             Downtime Reduction
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Minimize production downtime through anomaly detection & historical failure data.</p>
         </p>{" "}
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -66,6 +68,7 @@ const BannerWithFadingGridBackground = () => {
             Enhanced Quality
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Maintain Consistent production quality by tracking tool parameters & operator performance through historical data.</p>
         </p>
       </div>
     </div>

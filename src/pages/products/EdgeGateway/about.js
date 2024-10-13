@@ -1,7 +1,13 @@
-
-import { BarChartOutlined, CommentOutlined, ConsoleSqlOutlined, FireOutlined, WifiOutlined } from "@ant-design/icons";
+import {
+  BarChartOutlined,
+  CloudOutlined,
+  CommentOutlined,
+  ConsoleSqlOutlined,
+  FireOutlined,
+  WifiOutlined,
+} from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
-import IiotBanner from "../../../assets/Illustration/iiot-banner.jpg"
+import IiotBanner from "../../../assets/Illustration/iiot-banner.jpg";
 
 function About() {
   const cardsRef = useRef([]);
@@ -39,27 +45,23 @@ function About() {
         "Modbus TCP/IP, Modbus RTU (RS 232 and RS 485), OPC UA, Ethernet/IP",
     },
     {
-      icon: (
-        <WifiOutlined
-          style={{ fontSize: "4rem", marginBottom: "1rem" }}
-        />
-      ),
+      icon: <WifiOutlined style={{ fontSize: "4rem", marginBottom: "1rem" }} />,
       title: "Versatile Connectivity",
       description:
         "Compatible with 4G, Wi-Fi, Ethernet, and Bluetooth Low Energy (BLE)",
     },
     {
       icon: (
-        <ConsoleSqlOutlined style={{ fontSize: "4rem", marginBottom: "1rem" }} />
+        <ConsoleSqlOutlined
+          style={{ fontSize: "4rem", marginBottom: "1rem" }}
+        />
       ),
       title: "Local Data Processing",
       description:
         "Collect, process, and compute data on-site for immediate actionable insights",
     },
     {
-      icon: (
-        <FireOutlined style={{ fontSize: "4rem", marginBottom: "1rem" }} />
-      ),
+      icon: <FireOutlined style={{ fontSize: "4rem", marginBottom: "1rem" }} />,
       title: "User-Friendly Interface",
       description:
         "Intuitive and flexible configuration through a user-friendly interface",
@@ -72,11 +74,19 @@ function About() {
       description:
         "Robust processing (2.4GHz) capabilities designed for demanding industrial environments",
     },
+    {
+      icon: (
+        <CloudOutlined style={{ fontSize: "4rem", marginBottom: "1rem" }} />
+      ),
+      title: "Edge-to-Cloud Sync",
+      description:
+        "Automatically synchronize processed data from the edge to the cloud, ensuring seamless access to data anywhere.",
+    },
   ];
 
   return (
     <div className="relative h-auto flex flex-col justify-center items-center text-start md:text-start p-8 ">
-            <img
+      <img
         src={IiotBanner}
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover z-0 liopacity-30 opacity-30 dark:opacity-20"
@@ -96,7 +106,7 @@ function About() {
           </span>
         </h2>
         <p className="text-2xl md:text-2xl sm:text-xl xs:text-xl p-8">
-          A gateway device that industry leaders trust.
+        Your first step towards digital transformation
         </p>
       </div>
 

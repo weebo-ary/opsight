@@ -46,7 +46,7 @@ function Solution() {
     {
       image: Im3,
       title: "Real-Time Alerts",
-      description: "Get real time alerts once the threshold value is breached",
+      description: "Get real time alerts for Threshold values of different parameters",
     },
   ];
 

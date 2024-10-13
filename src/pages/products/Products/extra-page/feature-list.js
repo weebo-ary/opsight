@@ -12,7 +12,7 @@ const features = [
   {
     icon: <FieldTimeOutlined style={{ fontSize: "3rem" }} />,
     title: "Real Time Monitoring",
-    description: "Operation Parameters, Cycle Time, Part Count etc.",
+    description: "Operation Parameters, Cycle Time, Part Count and many more",
   },
   {
     icon: <AreaChartOutlined style={{ fontSize: "3rem" }} />,

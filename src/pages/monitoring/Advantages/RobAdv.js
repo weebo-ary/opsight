@@ -53,6 +53,7 @@ const BannerWithFadingGridBackground = () => {
             Improved Performance
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Maximize Robot Uptime & improve by analyzing historical data.</p>
         </p>
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -63,6 +64,7 @@ const BannerWithFadingGridBackground = () => {
             Downtime Reduction
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Minimize production downtime through anomaly detection & historical failure data.</p>
         </p>{" "}
         <p className="text-base md:text-2xl text-gray-800 dark:text-white mb-6 w-full">
           <b>
@@ -73,6 +75,7 @@ const BannerWithFadingGridBackground = () => {
             Enhanced Safety
           </b>{" "}
           <br />{" "}
+          <p className="text-lg mt-2 text-gray-400">Improve safety by tracking robot position in real-time to avoid any collision.</p>
         </p>
       </div>
     </div>

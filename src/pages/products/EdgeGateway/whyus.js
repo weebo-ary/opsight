@@ -59,7 +59,7 @@ const WhyUs = () => {
             <span className="w-full">Flexible Deployment</span>{" "}
             <CheckCircleFilled style={{ color: "green" }} />
             <span className="text-gray-300 w-full">
-              Easily deploy in various environments with multiple connectivity
+              Easy Deployment in various environments with multiple connectivity
               options.
             </span>
           </h2>
