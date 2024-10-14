@@ -11,6 +11,7 @@ import {
   BarChartOutlined,
   NumberOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 function ProcessSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -166,9 +167,11 @@ function ProcessSection() {
         </div>
         <div className="">
           <div className="">
+            <Link to="/cnc-monitoring">
             <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
               Learn more <ArrowRightOutlined className="ml-2" />
             </button>
+            </Link>
           </div>
         </div>
       </div>

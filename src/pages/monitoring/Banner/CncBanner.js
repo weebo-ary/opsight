@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import BannerImg from "../../../assets/OtherImages/CNC Monitoring.png"
+import { Link } from "react-router-dom";
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
@@ -72,13 +73,10 @@ const BannerWithFadingGridBackground = () => {
         </h1>
       </div>
       <div className="flex md:flex-row-reverse xs:flex-col-reverse sm:flex-col items-center justify-center gap-10">
-        <div className="md:w-1/3 sm:w-full xs:w-full flex flex-col md:flex-col sm:flex-row xs:flex-row justify-start items-center md:items-start md:justify-center space-y-4 md:space-y-0 md:space-x-4 md:gap-10 sm:gap-2 xs:gap-2">
+        <div className=" md:w-1/3 sm:w-full xs:w-full flex flex-col md:flex-col sm:flex-row xs:flex-row justify-start items-center md:items-start md:justify-center space-y-4 md:space-y-0 md:space-x-4 md:gap-10 sm:gap-2 xs:gap-2">
           <p className="sm:text-start xs:text-start text-base md:text-4xl text-gray-800 dark:text-white mb-10 sm:mb-0 xs:mb-0">
             Discover More About CNC & Assembly Line Monitoring
           </p>
-          <button className=" md:w-1/2 sm:w-full xs:w-full bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
-            Book Demo
-          </button>
         </div>
         <div>
           <img

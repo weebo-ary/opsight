@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import BannerImg from "../../../assets/OtherImages/Energy Monitoring.png"
+import { Link } from "react-router-dom";
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
@@ -75,9 +76,6 @@ const BannerWithFadingGridBackground = () => {
           <p className="sm:text-start xs:text-start text-base md:text-4xl text-gray-800 dark:text-white mb-10 sm:mb-0 xs:mb-0">
             Discover More About Energy Monitoring
           </p>
-          <button className=" md:w-1/2 sm:w-full xs:w-full bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
-            Book Demo
-          </button>
         </div>
         <div>
           <img

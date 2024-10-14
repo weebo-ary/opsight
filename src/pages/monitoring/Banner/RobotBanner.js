@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import BannerImg from "../../../assets/OtherImages/Robot Monitoring.png"
+import BannerImg from "../../../assets/OtherImages/Robot Monitoring.png";
+import { Link } from "react-router-dom";
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
@@ -67,7 +68,7 @@ const BannerWithFadingGridBackground = () => {
           </span>
         </p>
         <h1 className="text-6xl md:text-5xl sm:text-4xl xs:text-4xl md:text-center xs:text-start sm:text-start font-bold text-gray-800 dark:text-gray-100 mb-10">
-        Improve Robot Utilization through real-time Robot Fleet Monitoring
+          Improve Robot Utilization through real-time Robot Fleet Monitoring
         </h1>
       </div>
       <div className="flex md:flex-row-reverse xs:flex-col-reverse sm:flex-col items-center justify-center gap-10">
@@ -75,9 +76,11 @@ const BannerWithFadingGridBackground = () => {
           <p className="sm:text-start xs:text-start text-base md:text-4xl text-gray-800 dark:text-white mb-10 sm:mb-0 xs:mb-0">
             Discover More About Robot Monitoring
           </p>
-          <button className=" md:w-1/2 sm:w-full xs:w-full bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
-            Book Demo
-          </button>
+          {/* <Link to="/contact-us" >
+            <button className=" md:w-full sm:w-full xs:w-full bg-gray-800 dark:bg-white text-white dark:text-black py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+              Book Demo
+            </button>
+          </Link> */}
         </div>
         <div>
           <img

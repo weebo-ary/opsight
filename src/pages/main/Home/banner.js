@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import TypographyEffect from "../../../components/utils/TypographyEffect";
 import IllustrationLight from "../../../assets/Illustration/banner-home.jpg";
 import VideoBanner from "../../../assets/Video/Banner.mp4";
+import { Link } from "react-router-dom";
 
 function Banner() {
   const [isLeftVisible, setIsLeftVisible] = useState(false);
@@ -88,12 +89,16 @@ function Banner() {
           </p>
         </div>
         <div className="flex space-x-4">
-          <button className="px-6 py-3 bg-white text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
+         <Link to="/contact-us">
+         <button className="px-6 py-3 bg-white text-black font-medium rounded-md shadow hover:bg-gray-700 transition">
             Get started
           </button>
+          </Link>
+          <Link to="/cnc-monitoring">
           <button className="px-6 py-3 text-white font-medium rounded-md hover:text-gray-700 transition flex items-center">
             Learn more <ArrowRightOutlined className="ml-2" />
           </button>
+          </Link>
         </div>
       </div>
 
