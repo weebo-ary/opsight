@@ -4,14 +4,12 @@ import {
   ThunderboltOutlined,
   DatabaseOutlined,
   ToolOutlined,
-  ArrowRightOutlined,
   CloudDownloadOutlined,
   MonitorOutlined,
   RadarChartOutlined,
   BarChartOutlined,
   NumberOutlined,
 } from "@ant-design/icons";
-import { Link } from "react-router-dom";
 
 function ProcessSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
