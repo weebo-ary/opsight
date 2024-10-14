@@ -41,7 +41,7 @@ const FAQ = () => {
     {
       question: "What is IIOT?",
       answer:
-        "IIoT, or the Industrial Internet of Things, refers to the integration of Internet of Things (IoT) technology within industrial settings. It focuses on connecting industrial machines, sensors, and devices to the internet to gather and analyze data for improved operations and decision-making...",
+        "IIoT, or the Industrial Internet of Things, refers to the integration of Internet of Things (IoT) technology within industrial settings. It focuses on connecting industrial machines, sensors, and devices to the internet to gather and analyze data for improved operations and decision-making.",
     },
     {
       question:

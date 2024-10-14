@@ -142,45 +142,45 @@ const OfferingSection = () => {
       <img
         src={OfferingBg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 dark:opacity-20"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-80 dark:opacity-20"
       />
 
-      <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-row xs:flex-row items-center justify-center">
+      <div className="mx-auto relative z-10 flex flex-col md:flex-col sm:flex-row xs:flex-row bg-gray items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-8">
           <div
-            className={`flex flex-col items-center justify-center transition-all duration-1000 ease-in-out ${
+            className={`flex flex-col items-center justify-center transition-all duration-1000  ease-in-out  ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-20"
             }`}
           >
             <div
-              className="flex md:flex-row-reverse xs:flex-col-reverse items-center justify-between relative p-6 rounded-sm text-center overflow-hidden cursor-pointer "
+              className="flex md:flex-row-reverse xs:flex-col-reverse items-center justify-between  relative p-6 rounded-sm text-center overflow-hidden cursor-pointer "
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`w-full h-80 xs:h-auto sm:h-auto rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5  `}
+                className={`w-full h-80 xs:h-auto sm:h-auto rounded-lg ml-10 md:ml-10 xs:ml-0 relative z-10 dark:bg-transparent top-5 flex flex-col items-center justify-center gap-5 mb-10  `}
               >
-                <h1 className="sticky top-0 z-50 text-5xl text-center w-full mb-10 text-green-400">
+                <h1 className="sticky top-0 z-50 text-5xl text-center rounded-xl bg-white py-4 dark:p-0 dark:bg-transparent w-full mb-10 text-green-400">
                   {" "}
                   Our Offerings{" "}
                 </h1>
                 <div
-                  className={`flex flex-col items-center justify-center gap-5 mb-5 transition-all duration-500 ease-in-out transform ${
+                  className={`flex flex-col items-center justify-center rounded-xl bg-gray-800 py-4 dark:p-0 dark:bg-transparent gap-5 mb-5 transition-all duration-500 ease-in-out transform ${
                     isTransitioning
                       ? "translate-x-100% opacity-0"
                       : "translate-x-0 opacity-100"
                   }`}
                 >
-                  <div className="text-5xl text-black dark:text-white">
+                  <div className="text-5xl text-white">
                     {blobsDataTwo[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-center font-bold text-black dark:text-white">
+                    <h3 className="mt-4 text-3xl md:text-3xl xs:text-2xl text-center font-bold text-white">
                       {blobsDataTwo[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-900 dark:text-gray-100">
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
                       {blobsDataTwo[currentIndex].description}
                     </p>
                   </div>
@@ -202,25 +202,25 @@ const OfferingSection = () => {
               <div
                 className={`w-full h-80 rounded-lg mr-10 md:mr-10 xs:mr-0 relative z-10 top-5 flex flex-col items-center justify-center gap-5 sm:mb-10 xs:mb-10 `}
               >
-                <h1 className="text-5xl text-center w-full text-red-400 mb-10">
+                <h1 className="text-5xl text-center w-full text-red-400 mb-10 rounded-xl bg-white py-4 dark:p-0 dark:bg-transparent ">
                   {" "}
                   Industry Challenges{" "}
                 </h1>
                 <div
-                  className={`flex flex-col items-center justify-center gap-5 mb-5 transition-all duration-500 ease-in-out transform ${
+                  className={`flex flex-col items-center justify-center gap-5 mb-5 rounded-xl bg-gray-800 py-4 dark:p-0 dark:bg-transparent transition-all duration-500 ease-in-out transform ${
                     isTransitioning
                       ? "translate-x-100% opacity-0"
                       : "translate-x-0 opacity-100"
                   }`}
                 >
-                  <div className="text-5xl text-black dark:text-white">
+                  <div className="text-5xl text-white">
                     {blobsData[currentIndex].icon}
                   </div>
                   <div>
-                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-center font-bold text-black dark:text-white">
+                    <h3 className="mt-4 text-4xl md:text-4xl xs:text-2xl text-center font-bold text-white">
                       {blobsData[currentIndex].title}
                     </h3>
-                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-500 dark:text-gray-100">
+                    <p className="mt-2 text-xl md:text-md xs:text-lg text-center text-gray-100">
                       {blobsData[currentIndex].description}
                     </p>
                   </div>
