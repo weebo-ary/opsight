@@ -1,22 +1,13 @@
 import {
-  ArrowRightOutlined,
   BookOutlined,
-  ExpandAltOutlined,
-  KeyOutlined,
   ProjectOutlined,
-  SnippetsOutlined,
-  YoutubeOutlined,
+  SnippetsOutlined
 } from "@ant-design/icons";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Popup from "../popup";
 
 const DropdownMenu = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const togglePopup = () => {
-    setIsPopupOpen(!isPopupOpen);
-  };
   return (
     <div className="md:absolute xs:relative md:border-t-0 xs:border-t top-full md:w-64 xs:w-72 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-4 z-10 md:flex">
       <div className="md:w-1/2 xs:w-1/2 border-gray-100 dark:border-gray-700 pr-4">
