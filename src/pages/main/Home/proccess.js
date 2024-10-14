@@ -25,10 +25,10 @@ function ProcessSection() {
   // Define the array of carousel items
   const carouselItems = [
     {
-      icon: <CheckCircleOutlined className="text-4xl text-blue-500" />,
-      title: "Production Monitoring",
+      icon: <ThunderboltOutlined className="text-4xl text-blue-500" />,
+      title: "Line Monitoring",
       description:
-        "Ensure real-time tracking of output, product count to enable quick identification of bottlenecks.",
+        "Real-time tracking ensures efficiency, quality, workflow-optimization and quick issue identification for productivity.",
     },
     {
       icon: <RadarChartOutlined className="text-4xl text-blue-500" />,
@@ -46,11 +46,12 @@ function ProcessSection() {
 
   const carouselItemsTwo = [
     {
-      icon: <ToolOutlined className="text-4xl text-blue-500" />,
-      title: "Energy Monitoring",
+      icon: <DatabaseOutlined className="text-4xl text-blue-500" />,
+      title: " Incident Resolution",
       description:
-        "Tracks power consumption in real time, providing insights into efficiency and operational costs",
+        "Offers troubleshooting guidance/assistance for operational issues, minimizing downtime and enhancing overall machine performance.",
     },
+   
     {
       icon: <CloudDownloadOutlined className="text-4xl text-blue-500" />,
       title: "Data Analytics",
@@ -67,17 +68,18 @@ function ProcessSection() {
 
   const carouselItemsThree = [
     {
-      icon: <ThunderboltOutlined className="text-4xl text-blue-500" />,
-      title: "Line Monitoring",
+      icon: <CheckCircleOutlined className="text-4xl text-blue-500" />,
+      title: "Production Monitoring",
       description:
-        "Real-time tracking ensures efficiency, quality, workflow-optimization and quick issue identification for productivity.",
+        "Ensure real-time tracking of output, product count to enable quick identification of bottlenecks.",
     },
     {
-      icon: <DatabaseOutlined className="text-4xl text-blue-500" />,
-      title: " Incident Resolution",
+      icon: <ToolOutlined className="text-4xl text-blue-500" />,
+      title: "Energy Monitoring",
       description:
-        "Offers troubleshooting guidance/assistance for operational issues, minimizing downtime and enhancing overall machine performance.",
+        "Tracks power consumption in real time, providing insights into efficiency and operational costs",
     },
+   
     {
       icon: <MonitorOutlined className="text-4xl text-blue-500" />,
       title: "CNC Monitoring",
@@ -150,7 +152,7 @@ function ProcessSection() {
         isZoomedIn ? "scale-100" : "scale-90 opacity-50"
       }`} // Apply zoom in/out and opacity based on scroll
     >
-      <div className="absolute bottom-30 left-30 w-64 h-64 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-30 left-30 w-64 min-h-screen bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       <div className="flex flex-col items-start justify-center gap-10">
         <div className="">
           <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-900 dark:text-white">
@@ -165,7 +167,7 @@ function ProcessSection() {
             Design Or Develop Custom Software For Your Operations.
           </p>{" "}
         </div>
-        <div className="">
+        {/* <div className="">
           <div className="">
             <Link to="/cnc-monitoring">
               <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
@@ -173,7 +175,7 @@ function ProcessSection() {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col xs:max-w-full items-center justify-center">
         <div
@@ -188,7 +190,7 @@ function ProcessSection() {
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`relative z-10 sm:max-w-full xs:max-w-full top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
+                className={`z-10 sm:max-w-full xs:max-w-full top-5 flex flex-row-reverse items-center justify-center gap-5  transition-all duration-500 ease-in-out transform ${
                   isTransitioning
                     ? "translate-x-full opacity-0"
                     : "translate-x-0 opacity-100"
