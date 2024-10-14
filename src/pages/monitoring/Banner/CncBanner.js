@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import BannerImg from "../../../assets/OtherImages/CNC Monitoring.png"
-import { Link } from "react-router-dom";
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
