@@ -150,7 +150,7 @@ function ProcessSection() {
         isZoomedIn ? "scale-100" : "scale-90 opacity-50"
       }`} // Apply zoom in/out and opacity based on scroll
     >
-      <div className="absolute bottom-30 left-30 w-64 min-h-screen bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-30 left-30 w-64 h-auto bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       <div className="flex flex-col items-start justify-center gap-10">
         <div className="">
           <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-gray-900 dark:text-white">
