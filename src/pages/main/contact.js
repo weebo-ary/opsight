@@ -11,23 +11,42 @@ function Contact() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false); // New state for handling submission status
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://script.google.com/macros/s/AKfycbwBOs2yVtOluvC5g6YS_D9T4q-vzyDtfTaNj5lY3b4uL9O93D_82zFIkdTSDtIppqKdMA/exec", {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    setIsSubmitting(true); // Set the submitting state to true when the form is submitted
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwBOs2yVtOluvC5g6YS_D9T4q-vzyDtfTaNj5lY3b4uL9O93D_82zFIkdTSDtIppqKdMA/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    )
       .then(() => {
         alert("Form submitted successfully!");
+
+        // Clear the form fields after successful submission
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          queryType: "general-query",
+          message: "",
+        });
+
+        setIsSubmitting(false); // Set the submitting state back to false after submission
       })
       .catch((error) => {
         alert("There was an error submitting the form");
         console.error(error);
+        setIsSubmitting(false); // Set the submitting state back to false in case of an error
       });
   };
 
@@ -159,9 +178,10 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+                className="w-full bg-blue-500 text-white py-2 rounded-md disabled:bg-gray-500 hover:bg-blue-600 transition duration-200"
+                disabled={formData.email === "" || isSubmitting}
               >
-                Send
+                {isSubmitting ? "Sending..." : "Send"}
               </button>
             </form>
           </div>

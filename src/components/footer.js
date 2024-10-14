@@ -22,18 +22,19 @@ const Footer = () => {
           </p>
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FacebookOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-700 transition-colors duration-300" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <TwitterOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-600 transition-colors duration-300" />
-            </a>
-            <a href="https://www.linkedin.com/company/opsight-ai-pvt-ltd/" target="_blank" rel="noreferrer">
+            </a> */}
+            <a href="https://www.linkedin.com/company/opsight-ai-pvt-ltd/" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3">
               <LinkedinOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-800 transition-colors duration-300" />
+              Connect with us on LinkedIn!
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <InstagramOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-700 transition-colors duration-300" />
-            </a>
+            </a> */}
           </div>
         </div>
 
