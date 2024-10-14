@@ -1,22 +1,24 @@
-import React from 'react';
+import React from "react";
 import {
   FacebookOutlined,
   TwitterOutlined,
   LinkedinOutlined,
   InstagramOutlined,
-} from '@ant-design/icons';
+} from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="overflow-hidden bg-gray-100 mt-0 dark:bg-gray-900 text-black  dark:text-white py-10 transition-colors duration-500">
-      <div className="flex md:flex md:items-center md:justify-between xs:grid sm:grid sm:grid-cols-1 xs:grid-cols-1 px-12 gap-8">
+      <div className="flex md:flex md:items-start md:justify-between xs:grid sm:grid sm:grid-cols-1 xs:grid-cols-1 px-12 gap-8">
         {/* Column 1: Company Logo / Branding */}
         <div className="space-y-4 md:w-1/4 xs:w-full sm:w-full md:border-r xs:border-none sm:border-none">
           <h4 className="text-2xl font-bold text-gray-900 dark:text-white">
             Opsight AI
           </h4>
           <p className="text-gray-600 dark:text-gray-400">
-            AI-driven solutions to achieve operational excellence in your company.
+            AI-driven solutions to achieve operational excellence in your
+            company.
           </p>
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
@@ -42,24 +44,45 @@ const Footer = () => {
           </h4>
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
+              <Link
+                to="/"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
+              <Link
+                to="/about"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                Services
-              </a>
+              <Link
+                to="/iiot-gateway"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                IIoT Gateway
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                Contact Us
-              </a>
+              <Link
+                to="/platform"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Platform
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/contact-us"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Contact-Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -67,28 +90,56 @@ const Footer = () => {
         {/* Column 3: Services */}
         <div className="space-y-4">
           <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+            Solutions
+          </h4>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                to="/cnc-monitoring"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                CNC Monitoring
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/robot-monitoring"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Robot Monitoring
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/energy-monitoring"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Energy Monitoring
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
             Services
           </h4>
           <ul className="space-y-2">
             <li>
-              <a href="#consulting" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                AI Consulting
-              </a>
+              <Link
+                to="/training"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Training
+              </Link>
             </li>
             <li>
-              <a href="#analytics" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                Data Analytics
-              </a>
-            </li>
-            <li>
-              <a href="#development" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                Software Development
-              </a>
-            </li>
-            <li>
-              <a href="#training" className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100">
-                AI Training
-              </a>
+              <Link
+                to="/consultancy"
+                className="text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-100"
+              >
+                Consultancy
+              </Link>
             </li>
           </ul>
         </div>
@@ -99,13 +150,26 @@ const Footer = () => {
             Contact Us
           </h4>
           <p className="text-gray-600 dark:text-gray-500">
-            Email: <a href="mailto:support@company.com" className="hover:text-gray-800 dark:hover:text-white">support@company.com</a>
+            Email:{" "}
+            <a
+              href="mailto:support@company.com"
+              className="hover:text-gray-800 dark:hover:text-white"
+            >
+              support@company.com
+            </a>
           </p>
           <p className="text-gray-600 dark:text-gray-500">
-            Phone: <a href="tel:+11234567890" className="hover:text-gray-800 dark:hover:text-white">+1 (123) 456-7890</a>
+            Phone:{" "}
+            <a
+              href="tel:+11234567890"
+              className="hover:text-gray-800 dark:hover:text-white"
+            >
+              +1 (123) 456-7890
+            </a>
           </p>
           <p className="text-gray-600 dark:text-gray-500">
-            Address: 123 Main St, City, Country
+            Address: Priyadarshini Adhishthan Bawadia <br/>
+            Kalan, Bhopal (M.P.), 462026
           </p>
         </div>
       </div>
