@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import VideoContact from "../../assets/Video/Contact.mp4";
 import TrustUs from "./Home/trustus";
 
-function contact() {
+function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    queryType: "general-query",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch("https://script.google.com/macros/s/AKfycbwBOs2yVtOluvC5g6YS_D9T4q-vzyDtfTaNj5lY3b4uL9O93D_82zFIkdTSDtIppqKdMA/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then(() => {
+        alert("Form submitted successfully!");
+      })
+      .catch((error) => {
+        alert("There was an error submitting the form");
+        console.error(error);
+      });
+  };
+
   return (
     <>
       <div className="mx-0 lg:mx-0 md:mx-0 sm:mx-0 xs:mx-0 lg:mb-0 lg:mt-20 xs:mt-0 lg:min-h-screen md:h-min-h-screen sm:min-h-screen xs:min-h-screen flex flex-row md:flex-row items-start justify-start sm:flex-col xs:flex-col overflow-hidden p-5 md:gap-10">
@@ -59,7 +87,7 @@ function contact() {
           {/* Contact Form */}
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full space-y-6">
             <h2 className="text-2xl font-bold text-gray-700">Send Message</h2>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="flex space-x-4">
                 <div className="w-1/2">
                   <label className="block text-gray-700">First name</label>
@@ -67,6 +95,10 @@ function contact() {
                     type="text"
                     placeholder="Enter first name"
                     className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400"
+                    value={formData.firstName}
+                    onChange={(e) =>
+                      setFormData({ ...formData, firstName: e.target.value })
+                    }
                   />
                 </div>
                 <div className="w-1/2">
@@ -75,6 +107,10 @@ function contact() {
                     type="text"
                     placeholder="Enter last name"
                     className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400"
+                    value={formData.lastName}
+                    onChange={(e) =>
+                      setFormData({ ...formData, lastName: e.target.value })
+                    }
                   />
                 </div>
               </div>
@@ -85,12 +121,22 @@ function contact() {
                   type="email"
                   placeholder="Enter your email"
                   className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                 />
               </div>
 
               <div>
                 <label className="block text-gray-700">Type of query</label>
-                <select className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400">
+                <select
+                  className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400"
+                  value={formData.queryType}
+                  onChange={(e) =>
+                    setFormData({ ...formData, queryType: e.target.value })
+                  }
+                >
                   <option value="book-demo">Book a demo</option>
                   <option value="consultancy">Consultancy</option>
                   <option value="iiot-solution">IIOT solution</option>
@@ -104,6 +150,10 @@ function contact() {
                   placeholder="Enter your message"
                   rows="5"
                   className="mt-1 w-full px-4 py-2 border rounded-md text-gray-700 focus:ring-2 focus:ring-blue-400"
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                 ></textarea>
               </div>
 
@@ -122,4 +172,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
