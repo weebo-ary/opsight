@@ -131,7 +131,16 @@ const AboutUs = () => {
                 Pulak Rijhwani
               </h3>
               <div className="mt-4 flex justify-center space-x-6">
-                <LinkedinOutlined /> <MailOutlined />
+                <a
+                  href="https://www.linkedin.com/in/pulak-rijhwani-65180a56"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinOutlined />
+                </a>{" "}
+                <a href="mailto:pulakrijhwani@opsight.ai">
+                  <MailOutlined />
+                </a>
               </div>
             </div>
 
@@ -146,7 +155,16 @@ const AboutUs = () => {
                 Arun Kumar
               </h3>
               <div className="mt-4 flex justify-center space-x-6">
-                <LinkedinOutlined /> <MailOutlined />
+                <a
+                  href="https://www.linkedin.com/in/arun-kumar-4b025015a"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinOutlined />
+                </a>{" "}
+                <a href="mailto:arunkumar@opsight.ai">
+                  <MailOutlined />
+                </a>
               </div>
             </div>
           </div>
@@ -188,7 +206,16 @@ const AboutUs = () => {
                 Project Manager
               </h3>
               <div className="mt-4 flex justify-center space-x-6">
-                <LinkedinOutlined /> <MailOutlined />
+                <a
+                  href="https://www.linkedin.com/in/devansha-shrivastava"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinOutlined />
+                </a>{" "}
+                <a href="mailto:devansha@opsight.ai">
+                  <MailOutlined />
+                </a>
               </div>
             </div>
 
@@ -206,7 +233,16 @@ const AboutUs = () => {
                 Embedded Systems Engineer
               </h3>
               <div className="mt-4 flex justify-center space-x-6">
-                <LinkedinOutlined /> <MailOutlined />
+                <a
+                  href="https://www.linkedin.com/in/ramkaran-sherawat-16514621b"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinOutlined />
+                </a>{" "}
+                <a href="mailto:ramsherawat@opsight.ai">
+                  <MailOutlined />
+                </a>
               </div>
             </div>
 
@@ -224,7 +260,16 @@ const AboutUs = () => {
                 ML Intern
               </h3>
               <div className="mt-4 flex justify-center space-x-6">
-                <LinkedinOutlined /> <MailOutlined />
+                <a
+                  href="https://www.linkedin.com/in/prakashjadhav0210"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinOutlined />
+                </a>{" "}
+                <a href="mailto:prakash.jadhav@opsight.ai">
+                  <MailOutlined />
+                </a>
               </div>
             </div>
           </div>
