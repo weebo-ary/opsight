@@ -5,6 +5,11 @@ import {
   DatabaseOutlined,
   ToolOutlined,
   ArrowRightOutlined,
+  CloudDownloadOutlined,
+  MonitorOutlined,
+  RadarChartOutlined,
+  BarChartOutlined,
+  NumberOutlined,
 } from "@ant-design/icons";
 
 function ProcessSection() {
@@ -20,52 +25,61 @@ function ProcessSection() {
   const carouselItems = [
     {
       icon: <CheckCircleOutlined className="text-4xl text-blue-500" />,
-      title: "Performance Monitoring",
+      title: "Production Monitoring",
       description:
         "Real-time insights with continuous monitoring and immediate data analysis.",
     },
     {
-      icon: <ThunderboltOutlined className="text-4xl text-blue-500" />,
-      title: "Predictive Analytics",
+      icon: <RadarChartOutlined className="text-4xl text-blue-500" />,
+      title: "Machine Performance Monitoring",
       description:
         "Unlock the future with predictive analytics and data-driven insights.",
     },
     {
-      icon: <DatabaseOutlined className="text-4xl text-blue-500" />,
-      title: "Customised Solutions",
+      icon: <BarChartOutlined className="text-4xl text-blue-500" />,
+      title: "Predictive Maintenance ",
       description:
         "Tailored solutions to match your business needs and operational vision.",
-    },
-    {
-      icon: <ToolOutlined className="text-4xl text-blue-500" />,
-      title: "Incident Assistant",
-      description:
-        "Efficient incident resolution with data-backed insights and solutions.",
     },
   ];
 
   const carouselItemsTwo = [
     {
       icon: <ToolOutlined className="text-4xl text-blue-500" />,
-      title: "Incident Assistant",
+      title: "Energy Monitoring",
       description:
         "Efficient incident resolution with data-backed insights and solutions.",
     },
     {
-      icon: <CheckCircleOutlined className="text-4xl text-blue-500" />,
-      title: "Performance Monitoring",
+      icon: <CloudDownloadOutlined className="text-4xl text-blue-500" />,
+      title: "Data Analytics",
+      description:
+        "Efficient incident resolution with data-backed insights and solutions.",
+    },
+    {
+      icon: <NumberOutlined className="text-4xl text-blue-500" />,
+      title: "Customised Industry 4.0 solutions",
       description:
         "Real-time insights with continuous monitoring and immediate data analysis.",
     },
+  ];
+
+  const carouselItemsThree = [
     {
       icon: <ThunderboltOutlined className="text-4xl text-blue-500" />,
-      title: "Predictive Analytics",
+      title: "Line Monitoring",
       description:
         "Unlock the future with predictive analytics and data-driven insights.",
     },
     {
       icon: <DatabaseOutlined className="text-4xl text-blue-500" />,
-      title: "Customised Solutions",
+      title: " Incident Resolution",
+      description:
+        "Tailored solutions to match your business needs and operational vision.",
+    },
+    {
+      icon: <MonitorOutlined className="text-4xl text-blue-500" />,
+      title: "CNC Monitoring",
       description:
         "Tailored solutions to match your business needs and operational vision.",
     },
@@ -217,10 +231,10 @@ function ProcessSection() {
                     : "translate-x-0 opacity-100"
                 }`}
               >
-                <div>{carouselItems[currentIndex].icon}</div>
+                <div>{carouselItemsThree[currentIndex].icon}</div>
                 <div>
                   <h3 className="mt-4 text-2xl md:text-2xl sm:text-sm xs:text-sm text-end font-bold text-gray-800 dark:text-white">
-                    {carouselItems[currentIndex].title}
+                    {carouselItemsThree[currentIndex].title}
                   </h3>
                   <p className="mt-2 text-end md:text-lg sm:text-xs xs:text-xs   text-gray-600 dark:text-gray-400">
                     {carouselItems[currentIndex].description}
@@ -236,7 +250,7 @@ function ProcessSection() {
               </div>
             </div>
           </div>
-          <br/>
+          <br />
         </div>
       </div>
     </div>
