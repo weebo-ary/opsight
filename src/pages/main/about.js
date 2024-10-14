@@ -8,6 +8,7 @@ import RamImage from "../../assets/Images/ram1.jpeg";
 import PrakashImage from "../../assets/Images/prakash.jpg";
 import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 import Banner from "../../assets/Illustration/about-banner.jpg";
+import Connect from "../products/EdgeGateway/connect";
 
 const AboutUs = () => {
   return (
@@ -229,6 +230,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <Connect />
     </div>
   );
 };

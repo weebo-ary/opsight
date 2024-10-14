@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <TwitterOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-600 transition-colors duration-300" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/company/opsight-ai-pvt-ltd/" target="_blank" rel="noreferrer">
               <LinkedinOutlined className="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-800 transition-colors duration-300" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
@@ -161,15 +161,19 @@ const Footer = () => {
           <p className="text-gray-600 dark:text-gray-500">
             Phone:{" "}
             <a
-              href="tel:+11234567890"
+              href="tel:+918770885079"
               className="hover:text-gray-800 dark:hover:text-white"
             >
-              +1 (123) 456-7890
+              +91-8770885079
             </a>
           </p>
           <p className="text-gray-600 dark:text-gray-500">
-            Address: Priyadarshini Adhishthan Bawadia <br/>
+            HeadQuarter : Priyadarshini Adhishthan Bawadia <br/>
             Kalan, Bhopal (M.P.), 462026
+          </p>
+          <p className="text-gray-600 dark:text-gray-500">
+            NCR Office : P41 Etheria, 24th Floor, Bhutani <br/> 
+            Alphathum, Sector 90, Noida (U.P.), 201305
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import TypographyEffect from "../../../components/utils/TypographyEffect";
+import BannerImg from "../../../assets/OtherImages/IIOT Gateway.png"
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
@@ -100,8 +101,8 @@ const BannerWithFadingGridBackground = () => {
       </div>
       <img
         ref={imageRef}
-        src="http://placehold.it/400x600"
-        className={`mt-10 md:mt-0 transition-transform duration-1000 ease-in-out ${
+        src={BannerImg}
+        className={`mt-10 rounded-lg md:mt-0 transition-transform duration-1000 ease-in-out  ${
           isImageVisible
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-20"

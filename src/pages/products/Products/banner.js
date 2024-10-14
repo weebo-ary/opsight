@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import FlowImg from "../../../assets/OtherImages/Platform Flow.png"
 
 const BannerWithFadingGridBackground = () => {
   // Array to create 64 grid items (8x8 grid)
@@ -99,8 +100,8 @@ const BannerWithFadingGridBackground = () => {
       </div>
       <img
         ref={imageRef}
-        src="http://placehold.it/1140x600"
-        className={`mt-10 md:mt-0 transition-transform duration-1000 ease-in-out ${
+        src={FlowImg}
+        className={`mt-10 md:mt-0 transition-transform duration-1000 ease-in-out w-200 rounded-xl ${
           isImageVisible
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-20"
