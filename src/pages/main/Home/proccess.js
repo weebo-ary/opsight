@@ -28,19 +28,19 @@ function ProcessSection() {
       icon: <CheckCircleOutlined className="text-4xl text-blue-500" />,
       title: "Production Monitoring",
       description:
-        "Real-time insights with continuous monitoring and immediate data analysis.",
+        "Ensure real-time tracking of output, product count to enable quick identification of bottlenecks.",
     },
     {
       icon: <RadarChartOutlined className="text-4xl text-blue-500" />,
       title: "Machine Performance Monitoring",
       description:
-        "Unlock the future with predictive analytics and data-driven insights.",
+        "Track operational metrics such as speed, efficiency, and downtime to optimize productivity.",
     },
     {
       icon: <BarChartOutlined className="text-4xl text-blue-500" />,
       title: "Predictive Maintenance ",
       description:
-        "Tailored solutions to match your business needs and operational vision.",
+        "Forecast equipment failures before they occur, minimizing unexpected downtime and enhancing reliability and reduces overall maintenance costs.",
     },
   ];
 
@@ -49,19 +49,19 @@ function ProcessSection() {
       icon: <ToolOutlined className="text-4xl text-blue-500" />,
       title: "Energy Monitoring",
       description:
-        "Efficient incident resolution with data-backed insights and solutions.",
+        "Tracks power consumption in real time, providing insights into efficiency and operational costs",
     },
     {
       icon: <CloudDownloadOutlined className="text-4xl text-blue-500" />,
       title: "Data Analytics",
       description:
-        "Efficient incident resolution with data-backed insights and solutions.",
+        "Transforms raw performance metrics into actionable insights, enabling informed decision-making for optimization.",
     },
     {
       icon: <NumberOutlined className="text-4xl text-blue-500" />,
       title: "Customised Industry 4.0 solutions",
       description:
-        "Real-time insights with continuous monitoring and immediate data analysis.",
+        "Tailor advanced technologies like IoT, AI, and automation to meet specific industry needs, enhancing operational efficiency.",
     },
   ];
 
@@ -70,19 +70,19 @@ function ProcessSection() {
       icon: <ThunderboltOutlined className="text-4xl text-blue-500" />,
       title: "Line Monitoring",
       description:
-        "Unlock the future with predictive analytics and data-driven insights.",
+        "Real-time tracking ensures efficiency, quality, workflow-optimization and quick issue identification for productivity.",
     },
     {
       icon: <DatabaseOutlined className="text-4xl text-blue-500" />,
       title: " Incident Resolution",
       description:
-        "Tailored solutions to match your business needs and operational vision.",
+        "Offers troubleshooting guidance/assistance for operational issues, minimizing downtime and enhancing overall machine performance.",
     },
     {
       icon: <MonitorOutlined className="text-4xl text-blue-500" />,
       title: "CNC Monitoring",
       description:
-        "Tailored solutions to match your business needs and operational vision.",
+        "Real-time tracking of CNC machines enhances precision, productivity, and reduces errors through metric analysis.",
     },
   ];
 
@@ -168,9 +168,9 @@ function ProcessSection() {
         <div className="">
           <div className="">
             <Link to="/cnc-monitoring">
-            <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
-              Learn more <ArrowRightOutlined className="ml-2" />
-            </button>
+              <button className="px-6 py-3 bg-slate-600 dark:bg-white text-white dark:text-black font-medium rounded-lg shadow hover:bg-gray-700 transition">
+                Learn more <ArrowRightOutlined className="ml-2" />
+              </button>
             </Link>
           </div>
         </div>
